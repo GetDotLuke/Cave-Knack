@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Get.LukeCraft", "Get.LukeCraft.csproj", "{440B7243-B644-7B87-360A-08A35C0BFFBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{440B7243-B644-7B87-360A-08A35C0BFFBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{440B7243-B644-7B87-360A-08A35C0BFFBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{440B7243-B644-7B87-360A-08A35C0BFFBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{440B7243-B644-7B87-360A-08A35C0BFFBF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
