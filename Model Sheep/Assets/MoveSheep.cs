@@ -4,14 +4,17 @@ using System.Collections;
 public class MoveSheep : MonoBehaviour
 {
 
-    float speed = 7.0f;
-
+    public float speed = 3.0F;
+    public float rotationSpeed = 2.0F;
     void Update()
     {
-        var move = new Vector3(0, 0, Input.GetAxis("Vertical"));
+        float translation = Input.GetAxis("Vertical") * speed;
+        float rotation = Input.GetAxis("Horizontal") * rotationSpeed;
+        translation *= Time.deltaTime;
+        rotation *= Time.deltaTime;
+        transform.Translate(0, 0, translation);
+        transform.Rotate(0, rotation, 0);
 
-        transform.Rotate( 0.0f, -Input.GetAxis("Horizontal")* speed,  0.0f);
-
-        transform.position += move * speed * Time.deltaTime;
     }
+
 }
