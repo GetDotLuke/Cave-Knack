@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1109517887, guid: 66da555d9ce961d448d026ba0354ee79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lastUpdatedAtString: 2018-02-13T14:21:38.6284286+00:00
+  lastVerifiedAtString: 2018-02-13T14:21:38.6284286+00:00
+  firstInitializedAtString: 2018-02-13T14:20:56.5797821+00:00
+  gitRemote:
+    name: origin
+    url: https://github.com/GetDotLuke/CourseworkG54SPMV2.git
+    login: 
+    user: 
+    host: 
+    function: 0
+    token: 
+  gitBranch:
+    name: LukeBranch
+    tracking: '[None]'
+    isActive: 0
