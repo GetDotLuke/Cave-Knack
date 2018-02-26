@@ -4,8 +4,8 @@
     <Files>
       <File FileName="Assets\Block.cs" Line="1" Column="1" />
       <File FileName="Assets\Chunk.cs" Line="1" Column="1" />
-      <File FileName="Assets\World.cs" Line="11" Column="34" />
-      <File FileName="Assets\Utils.cs" Line="11" Column="2" />
+      <File FileName="Assets\World.cs" Line="12" Column="30" />
+      <File FileName="Assets\Utils.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

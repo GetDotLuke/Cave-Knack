@@ -11,9 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 1038538317, guid: 66da555d9ce961d448d026ba0354ee79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastUpdatedAtString: 2018-02-26T12:23:56.6772853+00:00
-  lastVerifiedAtString: 2018-02-26T12:23:57.2047128+00:00
-  initializedAtString: 2018-02-26T12:19:40.2728533+00:00
+  lastUpdatedAtString: 2018-02-26T16:34:44.2923855+00:00
+  lastVerifiedAtString: 2018-02-26T21:20:28.4142800+00:00
+  initializedAtString: 2018-02-26T13:09:42.9715596+00:00
   entries:
   - path: Assets\.gitignore
     fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\.gitignore

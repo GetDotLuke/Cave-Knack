@@ -11,9 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: -530159753, guid: 66da555d9ce961d448d026ba0354ee79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastUpdatedAtString: 2018-02-26T12:23:49.1371072+00:00
-  lastVerifiedAtString: 2018-02-26T12:23:49.1371072+00:00
-  initializedAtString: 2018-02-26T12:19:29.3106737+00:00
+  lastUpdatedAtString: 2018-02-26T13:12:55.2514473+00:00
+  lastVerifiedAtString: 2018-02-26T13:12:55.2514473+00:00
+  initializedAtString: 2018-02-26T13:07:40.0668448+00:00
   log:
   - commitID: 99f149f057e44bcbb942e3de6c1aaf2b3f64e129
     mergeA: 
