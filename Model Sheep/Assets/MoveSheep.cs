@@ -14,7 +14,7 @@ public class MoveSheep : MonoBehaviour
         rotation *= Time.deltaTime;
         transform.Translate(0, 0, translation);
         transform.Rotate(0, rotation, 0);
-
+        
     }
 
 }
