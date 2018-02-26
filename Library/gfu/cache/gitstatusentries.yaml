@@ -1,0 +1,1709 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1038538317, guid: 66da555d9ce961d448d026ba0354ee79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lastUpdatedAtString: 2018-02-26T12:23:56.6772853+00:00
+  lastVerifiedAtString: 2018-02-26T12:23:57.2047128+00:00
+  initializedAtString: 2018-02-26T12:19:40.2728533+00:00
+  entries:
+  - path: Assets\.gitignore
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\.gitignore
+    projectPath: Assets\.gitignore
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Assets\Block.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Block.cs
+    projectPath: Assets\Block.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Block.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Block.cs.meta
+    projectPath: Assets\Block.cs.meta
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Chunk.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Chunk.cs
+    projectPath: Assets\Chunk.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Chunk.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Chunk.cs.meta
+    projectPath: Assets\Chunk.cs.meta
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\cubes.unity
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\cubes.unity
+    projectPath: Assets\cubes.unity
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: .collabignore
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\.collabignore
+    projectPath: .collabignore
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets.meta
+    projectPath: Assets\Standard Assets.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters.meta
+    projectPath: Assets\Standard Assets\Characters.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter.meta
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter\Audio.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter\Audio.meta
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter\Audio.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Footstep01.wav
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Footstep01.wav
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Footstep01.wav
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Footstep01.wav.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Footstep01.wav.meta
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Footstep01.wav.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Footstep02.wav
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Footstep02.wav
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Footstep02.wav
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Footstep02.wav.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Footstep02.wav.meta
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Footstep02.wav.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Footstep03.wav
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Footstep03.wav
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Footstep03.wav
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Footstep03.wav.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Footstep03.wav.meta
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Footstep03.wav.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Footstep04.wav
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Footstep04.wav
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Footstep04.wav
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Footstep04.wav.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Footstep04.wav.meta
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Footstep04.wav.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Jump.wav
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Jump.wav
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Jump.wav
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Jump.wav.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Jump.wav.meta
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Jump.wav.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Land.wav
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Land.wav
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Land.wav
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Land.wav.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Land.wav.meta
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter\Audio\Land.wav.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt.meta
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter\Prefabs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter\Prefabs.meta
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter\Prefabs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter\Prefabs\FPSController.prefab
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter\Prefabs\FPSController.prefab
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter\Prefabs\FPSController.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter\Prefabs\FPSController.prefab.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter\Prefabs\FPSController.prefab.meta
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter\Prefabs\FPSController.prefab.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter\Prefabs\RigidBodyFPSController.prefab
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter\Prefabs\RigidBodyFPSController.prefab
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter\Prefabs\RigidBodyFPSController.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter\Prefabs\RigidBodyFPSController.prefab.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter\Prefabs\RigidBodyFPSController.prefab.meta
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter\Prefabs\RigidBodyFPSController.prefab.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts.meta
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs.meta
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs.meta
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs.meta
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs.meta
+    projectPath: Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\RollerBall.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\RollerBall.meta
+    projectPath: Assets\Standard Assets\Characters\RollerBall.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\RollerBall\Materials.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\RollerBall\Materials.meta
+    projectPath: Assets\Standard Assets\Characters\RollerBall\Materials.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\RollerBall\Materials\RollerBallGrey.mat
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\RollerBall\Materials\RollerBallGrey.mat
+    projectPath: Assets\Standard Assets\Characters\RollerBall\Materials\RollerBallGrey.mat
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\RollerBall\Materials\RollerBallGrey.mat.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\RollerBall\Materials\RollerBallGrey.mat.meta
+    projectPath: Assets\Standard Assets\Characters\RollerBall\Materials\RollerBallGrey.mat.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\RollerBall\Materials\RollerBallWhite.mat
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\RollerBall\Materials\RollerBallWhite.mat
+    projectPath: Assets\Standard Assets\Characters\RollerBall\Materials\RollerBallWhite.mat
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\RollerBall\Materials\RollerBallWhite.mat.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\RollerBall\Materials\RollerBallWhite.mat.meta
+    projectPath: Assets\Standard Assets\Characters\RollerBall\Materials\RollerBallWhite.mat.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\RollerBall\Models.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\RollerBall\Models.meta
+    projectPath: Assets\Standard Assets\Characters\RollerBall\Models.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\RollerBall\Models\RollerBall.fbx
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\RollerBall\Models\RollerBall.fbx
+    projectPath: Assets\Standard Assets\Characters\RollerBall\Models\RollerBall.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\RollerBall\Models\RollerBall.fbx.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\RollerBall\Models\RollerBall.fbx.meta
+    projectPath: Assets\Standard Assets\Characters\RollerBall\Models\RollerBall.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\RollerBall\Prefabs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\RollerBall\Prefabs.meta
+    projectPath: Assets\Standard Assets\Characters\RollerBall\Prefabs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\RollerBall\Prefabs\RollerBall.prefab
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\RollerBall\Prefabs\RollerBall.prefab
+    projectPath: Assets\Standard Assets\Characters\RollerBall\Prefabs\RollerBall.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\RollerBall\Prefabs\RollerBall.prefab.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\RollerBall\Prefabs\RollerBall.prefab.meta
+    projectPath: Assets\Standard Assets\Characters\RollerBall\Prefabs\RollerBall.prefab.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt
+    projectPath: Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt.meta
+    projectPath: Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\RollerBall\Scripts.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\RollerBall\Scripts.meta
+    projectPath: Assets\Standard Assets\Characters\RollerBall\Scripts.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\RollerBall\Scripts\Ball.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\RollerBall\Scripts\Ball.cs
+    projectPath: Assets\Standard Assets\Characters\RollerBall\Scripts\Ball.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\RollerBall\Scripts\Ball.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\RollerBall\Scripts\Ball.cs.meta
+    projectPath: Assets\Standard Assets\Characters\RollerBall\Scripts\Ball.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\RollerBall\Scripts\BallUserControl.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\RollerBall\Scripts\BallUserControl.cs
+    projectPath: Assets\Standard Assets\Characters\RollerBall\Scripts\BallUserControl.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\RollerBall\Scripts\BallUserControl.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\RollerBall\Scripts\BallUserControl.cs.meta
+    projectPath: Assets\Standard Assets\Characters\RollerBall\Scripts\BallUserControl.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\RollerBall\Textures.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\RollerBall\Textures.meta
+    projectPath: Assets\Standard Assets\Characters\RollerBall\Textures.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\RollerBall\Textures\RollerBallAlbedo.png
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\RollerBall\Textures\RollerBallAlbedo.png
+    projectPath: Assets\Standard Assets\Characters\RollerBall\Textures\RollerBallAlbedo.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\RollerBall\Textures\RollerBallAlbedo.png.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\RollerBall\Textures\RollerBallAlbedo.png.meta
+    projectPath: Assets\Standard Assets\Characters\RollerBall\Textures\RollerBallAlbedo.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\RollerBall\Textures\RollerBallSpecularGloss.png
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\RollerBall\Textures\RollerBallSpecularGloss.png
+    projectPath: Assets\Standard Assets\Characters\RollerBall\Textures\RollerBallSpecularGloss.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\RollerBall\Textures\RollerBallSpecularGloss.png.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\RollerBall\Textures\RollerBallSpecularGloss.png.meta
+    projectPath: Assets\Standard Assets\Characters\RollerBall\Textures\RollerBallSpecularGloss.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidCrouch.fbx
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidCrouch.fbx
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidCrouch.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidCrouch.fbx.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidCrouch.fbx.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidCrouch.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidIdle.fbx
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidIdle.fbx
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidIdle.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidIdle.fbx.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidIdle.fbx.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidIdle.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidIdleJumpUp.fbx
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidIdleJumpUp.fbx
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidIdleJumpUp.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidIdleJumpUp.fbx.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidIdleJumpUp.fbx.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidIdleJumpUp.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidJumpAndFall.fbx
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidJumpAndFall.fbx
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidJumpAndFall.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidJumpAndFall.fbx.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidJumpAndFall.fbx.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidJumpAndFall.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidMidAir.fbx
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidMidAir.fbx
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidMidAir.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidMidAir.fbx.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidMidAir.fbx.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidMidAir.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidRun.fbx
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidRun.fbx
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidRun.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidRun.fbx.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidRun.fbx.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidRun.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidRunTurn.fbx
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidRunTurn.fbx
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidRunTurn.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidRunTurn.fbx.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidRunTurn.fbx.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidRunTurn.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidRunTurnSharp.fbx
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidRunTurnSharp.fbx
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidRunTurnSharp.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidRunTurnSharp.fbx.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidRunTurnSharp.fbx.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidRunTurnSharp.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidStandTurn.fbx
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidStandTurn.fbx
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidStandTurn.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidStandTurn.fbx.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidStandTurn.fbx.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidStandTurn.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidWalk.fbx
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidWalk.fbx
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidWalk.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidWalk.fbx.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidWalk.fbx.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidWalk.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidWalkTurn.fbx
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidWalkTurn.fbx
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidWalkTurn.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidWalkTurn.fbx.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidWalkTurn.fbx.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidWalkTurn.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidWalkTurnSharp.fbx
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidWalkTurnSharp.fbx
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidWalkTurnSharp.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidWalkTurnSharp.fbx.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidWalkTurnSharp.fbx.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animation\HumanoidWalkTurnSharp.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animator.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Animator.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animator.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animator\ThirdPersonAnimatorController.controller
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Animator\ThirdPersonAnimatorController.controller
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animator\ThirdPersonAnimatorController.controller
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animator\ThirdPersonAnimatorController.controller.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Animator\ThirdPersonAnimatorController.controller.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Animator\ThirdPersonAnimatorController.controller.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Materials.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Materials.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Materials.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Materials\EthanGrey.mat
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Materials\EthanGrey.mat
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Materials\EthanGrey.mat
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Materials\EthanGrey.mat.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Materials\EthanGrey.mat.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Materials\EthanGrey.mat.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Materials\EthanWhite.mat
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Materials\EthanWhite.mat
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Materials\EthanWhite.mat
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Materials\EthanWhite.mat.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Materials\EthanWhite.mat.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Materials\EthanWhite.mat.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Models.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Models.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Models.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Models\Ethan.fbx
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Models\Ethan.fbx
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Models\Ethan.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Models\Ethan.fbx.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Models\Ethan.fbx.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Models\Ethan.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Prefabs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Prefabs.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Prefabs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Prefabs\AIThirdPersonController.prefab
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Prefabs\AIThirdPersonController.prefab
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Prefabs\AIThirdPersonController.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Prefabs\AIThirdPersonController.prefab.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Prefabs\AIThirdPersonController.prefab.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Prefabs\AIThirdPersonController.prefab.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Prefabs\ThirdPersonController.prefab
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Prefabs\ThirdPersonController.prefab
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Prefabs\ThirdPersonController.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Prefabs\ThirdPersonController.prefab.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Prefabs\ThirdPersonController.prefab.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Prefabs\ThirdPersonController.prefab.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\AICharacterControl.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\AICharacterControl.cs
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\AICharacterControl.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\AICharacterControl.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\AICharacterControl.cs.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\AICharacterControl.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Textures.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Textures.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Textures.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Textures\EthanNormals.png
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Textures\EthanNormals.png
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Textures\EthanNormals.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Textures\EthanNormals.png.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Textures\EthanNormals.png.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Textures\EthanNormals.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Textures\EthanOcclusion.png
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Textures\EthanOcclusion.png
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Textures\EthanOcclusion.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\Textures\EthanOcclusion.png.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\Textures\EthanOcclusion.png.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\Textures\EthanOcclusion.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt.meta
+    projectPath: Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt
+    projectPath: Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Prefabs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Prefabs.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Prefabs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Prefabs\CarTiltControls.prefab
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Prefabs\CarTiltControls.prefab
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Prefabs\CarTiltControls.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Prefabs\CarTiltControls.prefab.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Prefabs\CarTiltControls.prefab.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Prefabs\CarTiltControls.prefab.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Prefabs\DualTouchControls.prefab
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Prefabs\DualTouchControls.prefab
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Prefabs\DualTouchControls.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Prefabs\DualTouchControls.prefab.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Prefabs\DualTouchControls.prefab.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Prefabs\DualTouchControls.prefab.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Prefabs\MobileAircraftControls.prefab
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Prefabs\MobileAircraftControls.prefab
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Prefabs\MobileAircraftControls.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Prefabs\MobileAircraftControls.prefab.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Prefabs\MobileAircraftControls.prefab.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Prefabs\MobileAircraftControls.prefab.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Prefabs\MobileSingleStickControl.prefab
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Prefabs\MobileSingleStickControl.prefab
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Prefabs\MobileSingleStickControl.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Prefabs\MobileSingleStickControl.prefab.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Prefabs\MobileSingleStickControl.prefab.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Prefabs\MobileSingleStickControl.prefab.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Prefabs\MobileTiltControlRig.prefab
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Prefabs\MobileTiltControlRig.prefab
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Prefabs\MobileTiltControlRig.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Prefabs\MobileTiltControlRig.prefab.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Prefabs\MobileTiltControlRig.prefab.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Prefabs\MobileTiltControlRig.prefab.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Scripts.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Scripts.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Scripts.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Scripts\Joystick.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Scripts\Joystick.cs
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Scripts\Joystick.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Scripts\Joystick.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Scripts\Joystick.cs.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Scripts\Joystick.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonAcceleratorOverSprite.png
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonAcceleratorOverSprite.png
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonAcceleratorOverSprite.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonAcceleratorOverSprite.png.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonAcceleratorOverSprite.png.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonAcceleratorOverSprite.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonAcceleratorUpSprite.png
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonAcceleratorUpSprite.png
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonAcceleratorUpSprite.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonAcceleratorUpSprite.png.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonAcceleratorUpSprite.png.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonAcceleratorUpSprite.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonArrowOverSprite.png
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonArrowOverSprite.png
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonArrowOverSprite.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonArrowOverSprite.png.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonArrowOverSprite.png.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonArrowOverSprite.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonArrowUpSprite.png
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonArrowUpSprite.png
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonArrowUpSprite.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonArrowUpSprite.png.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonArrowUpSprite.png.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonArrowUpSprite.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonBrakeOverSprite.png
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonBrakeOverSprite.png
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonBrakeOverSprite.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonBrakeOverSprite.png.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonBrakeOverSprite.png.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonBrakeOverSprite.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonBrakeUpSprite.png
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonBrakeUpSprite.png
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonBrakeUpSprite.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonBrakeUpSprite.png.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonBrakeUpSprite.png.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonBrakeUpSprite.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonCameraCycleUpSprite.png
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonCameraCycleUpSprite.png
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonCameraCycleUpSprite.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonCameraCycleUpSprite.png.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonCameraCycleUpSprite.png.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonCameraCycleUpSprite.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonResetSprite.png
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonResetSprite.png
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonResetSprite.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonResetSprite.png.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonResetSprite.png.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonResetSprite.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonSpacebarSprite.png
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonSpacebarSprite.png
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonSpacebarSprite.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonSpacebarSprite.png.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonSpacebarSprite.png.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonSpacebarSprite.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonThumbstickOverSprite.png
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonThumbstickOverSprite.png
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonThumbstickOverSprite.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonThumbstickOverSprite.png.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonThumbstickOverSprite.png.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonThumbstickOverSprite.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonThumbstickUpSprite.png
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonThumbstickUpSprite.png
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonThumbstickUpSprite.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonThumbstickUpSprite.png.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonThumbstickUpSprite.png.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonThumbstickUpSprite.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonTimescaleFullUpSprite.png
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonTimescaleFullUpSprite.png
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonTimescaleFullUpSprite.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonTimescaleFullUpSprite.png.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonTimescaleFullUpSprite.png.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonTimescaleFullUpSprite.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonTimescaleSlowUpSprite.png
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonTimescaleSlowUpSprite.png
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonTimescaleSlowUpSprite.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonTimescaleSlowUpSprite.png.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonTimescaleSlowUpSprite.png.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\ButtonTimescaleSlowUpSprite.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\SliderBackgroundSprite.png
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\SliderBackgroundSprite.png
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\SliderBackgroundSprite.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\SliderBackgroundSprite.png.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\SliderBackgroundSprite.png.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\SliderBackgroundSprite.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\SliderHandleSprite.png
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\SliderHandleSprite.png
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\SliderHandleSprite.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\SliderHandleSprite.png.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\SliderHandleSprite.png.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\SliderHandleSprite.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\TouchpadSprite.png
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\TouchpadSprite.png
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\TouchpadSprite.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\CrossPlatformInput\Sprites\TouchpadSprite.png.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\CrossPlatformInput\Sprites\TouchpadSprite.png.meta
+    projectPath: Assets\Standard Assets\CrossPlatformInput\Sprites\TouchpadSprite.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Editor.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Editor.meta
+    projectPath: Assets\Standard Assets\Editor.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Editor\CrossPlatformInput.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Editor\CrossPlatformInput.meta
+    projectPath: Assets\Standard Assets\Editor\CrossPlatformInput.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs
+    projectPath: Assets\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs.meta
+    projectPath: Assets\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\PhysicsMaterials.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\PhysicsMaterials.meta
+    projectPath: Assets\Standard Assets\PhysicsMaterials.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\PhysicsMaterials\Bouncy.physicmaterial
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\PhysicsMaterials\Bouncy.physicmaterial
+    projectPath: Assets\Standard Assets\PhysicsMaterials\Bouncy.physicmaterial
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\PhysicsMaterials\Bouncy.physicmaterial.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\PhysicsMaterials\Bouncy.physicmaterial.meta
+    projectPath: Assets\Standard Assets\PhysicsMaterials\Bouncy.physicmaterial.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\PhysicsMaterials\Ice.physicmaterial
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\PhysicsMaterials\Ice.physicmaterial
+    projectPath: Assets\Standard Assets\PhysicsMaterials\Ice.physicmaterial
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\PhysicsMaterials\Ice.physicmaterial.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\PhysicsMaterials\Ice.physicmaterial.meta
+    projectPath: Assets\Standard Assets\PhysicsMaterials\Ice.physicmaterial.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\PhysicsMaterials\MaxFriction.physicMaterial
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\PhysicsMaterials\MaxFriction.physicMaterial
+    projectPath: Assets\Standard Assets\PhysicsMaterials\MaxFriction.physicMaterial
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\PhysicsMaterials\MaxFriction.physicMaterial.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\PhysicsMaterials\MaxFriction.physicMaterial.meta
+    projectPath: Assets\Standard Assets\PhysicsMaterials\MaxFriction.physicMaterial.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\PhysicsMaterials\Metal.physicmaterial
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\PhysicsMaterials\Metal.physicmaterial
+    projectPath: Assets\Standard Assets\PhysicsMaterials\Metal.physicmaterial
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\PhysicsMaterials\Metal.physicmaterial.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\PhysicsMaterials\Metal.physicmaterial.meta
+    projectPath: Assets\Standard Assets\PhysicsMaterials\Metal.physicmaterial.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\PhysicsMaterials\Rubber.physicmaterial
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\PhysicsMaterials\Rubber.physicmaterial
+    projectPath: Assets\Standard Assets\PhysicsMaterials\Rubber.physicmaterial
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\PhysicsMaterials\Rubber.physicmaterial.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\PhysicsMaterials\Rubber.physicmaterial.meta
+    projectPath: Assets\Standard Assets\PhysicsMaterials\Rubber.physicmaterial.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\PhysicsMaterials\Wood.physicmaterial
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\PhysicsMaterials\Wood.physicmaterial
+    projectPath: Assets\Standard Assets\PhysicsMaterials\Wood.physicmaterial
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\PhysicsMaterials\Wood.physicmaterial.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\PhysicsMaterials\Wood.physicmaterial.meta
+    projectPath: Assets\Standard Assets\PhysicsMaterials\Wood.physicmaterial.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\PhysicsMaterials\ZeroFriction.physicMaterial
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\PhysicsMaterials\ZeroFriction.physicMaterial
+    projectPath: Assets\Standard Assets\PhysicsMaterials\ZeroFriction.physicMaterial
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\PhysicsMaterials\ZeroFriction.physicMaterial.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\PhysicsMaterials\ZeroFriction.physicMaterial.meta
+    projectPath: Assets\Standard Assets\PhysicsMaterials\ZeroFriction.physicMaterial.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility.meta
+    projectPath: Assets\Standard Assets\Utility.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\ActivateTrigger.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\ActivateTrigger.cs
+    projectPath: Assets\Standard Assets\Utility\ActivateTrigger.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\ActivateTrigger.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\ActivateTrigger.cs.meta
+    projectPath: Assets\Standard Assets\Utility\ActivateTrigger.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\AlphaButtonClickMask.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\AlphaButtonClickMask.cs
+    projectPath: Assets\Standard Assets\Utility\AlphaButtonClickMask.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\AlphaButtonClickMask.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\AlphaButtonClickMask.cs.meta
+    projectPath: Assets\Standard Assets\Utility\AlphaButtonClickMask.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\AutoMobileShaderSwitch.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\AutoMobileShaderSwitch.cs
+    projectPath: Assets\Standard Assets\Utility\AutoMobileShaderSwitch.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\AutoMobileShaderSwitch.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\AutoMobileShaderSwitch.cs.meta
+    projectPath: Assets\Standard Assets\Utility\AutoMobileShaderSwitch.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\AutoMoveAndRotate.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\AutoMoveAndRotate.cs
+    projectPath: Assets\Standard Assets\Utility\AutoMoveAndRotate.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\AutoMoveAndRotate.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\AutoMoveAndRotate.cs.meta
+    projectPath: Assets\Standard Assets\Utility\AutoMoveAndRotate.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\CameraRefocus.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\CameraRefocus.cs
+    projectPath: Assets\Standard Assets\Utility\CameraRefocus.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\CameraRefocus.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\CameraRefocus.cs.meta
+    projectPath: Assets\Standard Assets\Utility\CameraRefocus.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\CurveControlledBob.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\CurveControlledBob.cs
+    projectPath: Assets\Standard Assets\Utility\CurveControlledBob.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\CurveControlledBob.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\CurveControlledBob.cs.meta
+    projectPath: Assets\Standard Assets\Utility\CurveControlledBob.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\DragRigidbody.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\DragRigidbody.cs
+    projectPath: Assets\Standard Assets\Utility\DragRigidbody.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\DragRigidbody.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\DragRigidbody.cs.meta
+    projectPath: Assets\Standard Assets\Utility\DragRigidbody.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\DynamicShadowSettings.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\DynamicShadowSettings.cs
+    projectPath: Assets\Standard Assets\Utility\DynamicShadowSettings.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\DynamicShadowSettings.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\DynamicShadowSettings.cs.meta
+    projectPath: Assets\Standard Assets\Utility\DynamicShadowSettings.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\EventSystemChecker.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\EventSystemChecker.cs
+    projectPath: Assets\Standard Assets\Utility\EventSystemChecker.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\EventSystemChecker.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\EventSystemChecker.cs.meta
+    projectPath: Assets\Standard Assets\Utility\EventSystemChecker.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\FOVKick.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\FOVKick.cs
+    projectPath: Assets\Standard Assets\Utility\FOVKick.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\FOVKick.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\FOVKick.cs.meta
+    projectPath: Assets\Standard Assets\Utility\FOVKick.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\FPSCounter.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\FPSCounter.cs
+    projectPath: Assets\Standard Assets\Utility\FPSCounter.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\FPSCounter.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\FPSCounter.cs.meta
+    projectPath: Assets\Standard Assets\Utility\FPSCounter.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\FollowTarget.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\FollowTarget.cs
+    projectPath: Assets\Standard Assets\Utility\FollowTarget.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\FollowTarget.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\FollowTarget.cs.meta
+    projectPath: Assets\Standard Assets\Utility\FollowTarget.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\ForcedReset.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\ForcedReset.cs
+    projectPath: Assets\Standard Assets\Utility\ForcedReset.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\ForcedReset.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\ForcedReset.cs.meta
+    projectPath: Assets\Standard Assets\Utility\ForcedReset.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\LerpControlledBob.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\LerpControlledBob.cs
+    projectPath: Assets\Standard Assets\Utility\LerpControlledBob.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\LerpControlledBob.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\LerpControlledBob.cs.meta
+    projectPath: Assets\Standard Assets\Utility\LerpControlledBob.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\ObjectResetter.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\ObjectResetter.cs
+    projectPath: Assets\Standard Assets\Utility\ObjectResetter.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\ObjectResetter.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\ObjectResetter.cs.meta
+    projectPath: Assets\Standard Assets\Utility\ObjectResetter.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\ParticleSystemDestroyer.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\ParticleSystemDestroyer.cs
+    projectPath: Assets\Standard Assets\Utility\ParticleSystemDestroyer.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\ParticleSystemDestroyer.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\ParticleSystemDestroyer.cs.meta
+    projectPath: Assets\Standard Assets\Utility\ParticleSystemDestroyer.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\PlatformSpecificContent.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\PlatformSpecificContent.cs
+    projectPath: Assets\Standard Assets\Utility\PlatformSpecificContent.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\PlatformSpecificContent.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\PlatformSpecificContent.cs.meta
+    projectPath: Assets\Standard Assets\Utility\PlatformSpecificContent.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\Prefabs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\Prefabs.meta
+    projectPath: Assets\Standard Assets\Utility\Prefabs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\Prefabs\FramerateCounter.prefab
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\Prefabs\FramerateCounter.prefab
+    projectPath: Assets\Standard Assets\Utility\Prefabs\FramerateCounter.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\Prefabs\FramerateCounter.prefab.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\Prefabs\FramerateCounter.prefab.meta
+    projectPath: Assets\Standard Assets\Utility\Prefabs\FramerateCounter.prefab.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\SimpleActivatorMenu.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\SimpleActivatorMenu.cs
+    projectPath: Assets\Standard Assets\Utility\SimpleActivatorMenu.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\SimpleActivatorMenu.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\SimpleActivatorMenu.cs.meta
+    projectPath: Assets\Standard Assets\Utility\SimpleActivatorMenu.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\SimpleMouseRotator.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\SimpleMouseRotator.cs
+    projectPath: Assets\Standard Assets\Utility\SimpleMouseRotator.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\SimpleMouseRotator.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\SimpleMouseRotator.cs.meta
+    projectPath: Assets\Standard Assets\Utility\SimpleMouseRotator.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\SmoothFollow.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\SmoothFollow.cs
+    projectPath: Assets\Standard Assets\Utility\SmoothFollow.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\SmoothFollow.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\SmoothFollow.cs.meta
+    projectPath: Assets\Standard Assets\Utility\SmoothFollow.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\TimedObjectActivator.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\TimedObjectActivator.cs
+    projectPath: Assets\Standard Assets\Utility\TimedObjectActivator.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\TimedObjectActivator.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\TimedObjectActivator.cs.meta
+    projectPath: Assets\Standard Assets\Utility\TimedObjectActivator.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\TimedObjectDestructor.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\TimedObjectDestructor.cs
+    projectPath: Assets\Standard Assets\Utility\TimedObjectDestructor.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\TimedObjectDestructor.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\TimedObjectDestructor.cs.meta
+    projectPath: Assets\Standard Assets\Utility\TimedObjectDestructor.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\WaypointCircuit.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\WaypointCircuit.cs
+    projectPath: Assets\Standard Assets\Utility\WaypointCircuit.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\WaypointCircuit.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\WaypointCircuit.cs.meta
+    projectPath: Assets\Standard Assets\Utility\WaypointCircuit.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\WaypointProgressTracker.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\WaypointProgressTracker.cs
+    projectPath: Assets\Standard Assets\Utility\WaypointProgressTracker.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Standard Assets\Utility\WaypointProgressTracker.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Standard Assets\Utility\WaypointProgressTracker.cs.meta
+    projectPath: Assets\Standard Assets\Utility\WaypointProgressTracker.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Utils.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Utils.cs
+    projectPath: Assets\Utils.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Utils.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Utils.cs.meta
+    projectPath: Assets\Utils.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\World.cs
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\World.cs
+    projectPath: Assets\World.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\World.cs.meta
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\World.cs.meta
+    projectPath: Assets\World.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\AudioManager.asset
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\ProjectSettings\AudioManager.asset
+    projectPath: ProjectSettings\AudioManager.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\ClusterInputManager.asset
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\ProjectSettings\ClusterInputManager.asset
+    projectPath: ProjectSettings\ClusterInputManager.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\DynamicsManager.asset
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\ProjectSettings\DynamicsManager.asset
+    projectPath: ProjectSettings\DynamicsManager.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\EditorBuildSettings.asset
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\ProjectSettings\EditorBuildSettings.asset
+    projectPath: ProjectSettings\EditorBuildSettings.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\EditorSettings.asset
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\ProjectSettings\EditorSettings.asset
+    projectPath: ProjectSettings\EditorSettings.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\GraphicsSettings.asset
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\ProjectSettings\GraphicsSettings.asset
+    projectPath: ProjectSettings\GraphicsSettings.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\InputManager.asset
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\ProjectSettings\InputManager.asset
+    projectPath: ProjectSettings\InputManager.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\NavMeshAreas.asset
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\ProjectSettings\NavMeshAreas.asset
+    projectPath: ProjectSettings\NavMeshAreas.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\NetworkManager.asset
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\ProjectSettings\NetworkManager.asset
+    projectPath: ProjectSettings\NetworkManager.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\Physics2DSettings.asset
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\ProjectSettings\Physics2DSettings.asset
+    projectPath: ProjectSettings\Physics2DSettings.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\ProjectSettings.asset
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\ProjectSettings\ProjectSettings.asset
+    projectPath: ProjectSettings\ProjectSettings.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\ProjectVersion.txt
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\ProjectSettings\ProjectVersion.txt
+    projectPath: ProjectSettings\ProjectVersion.txt
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\QualitySettings.asset
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\ProjectSettings\QualitySettings.asset
+    projectPath: ProjectSettings\QualitySettings.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\TagManager.asset
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\ProjectSettings\TagManager.asset
+    projectPath: ProjectSettings\TagManager.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\TimeManager.asset
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\ProjectSettings\TimeManager.asset
+    projectPath: ProjectSettings\TimeManager.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\UnityConnectSettings.asset
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\ProjectSettings\UnityConnectSettings.asset
+    projectPath: ProjectSettings\UnityConnectSettings.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityPackageManager\manifest.json
+    fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\UnityPackageManager\manifest.json
+    projectPath: UnityPackageManager\manifest.json
+    originalPath: 
+    status: 1
+    staged: 0

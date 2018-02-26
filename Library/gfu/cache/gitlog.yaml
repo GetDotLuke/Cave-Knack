@@ -1,0 +1,192 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -530159753, guid: 66da555d9ce961d448d026ba0354ee79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lastUpdatedAtString: 2018-02-26T12:23:49.1371072+00:00
+  lastVerifiedAtString: 2018-02-26T12:23:49.1371072+00:00
+  initializedAtString: 2018-02-26T12:19:29.3106737+00:00
+  log:
+  - commitID: 99f149f057e44bcbb942e3de6c1aaf2b3f64e129
+    mergeA: 
+    mergeB: 
+    authorName: Luke Gardner
+    authorEmail: stylg4@nottingham.ac.uk
+    commitEmail: stylg4@nottingham.ac.uk
+    commitName: Luke Gardner
+    summary: More chunking
+    description: More chunking
+    timeString: 2018-02-13T14:42:25.0000000+00:00
+    commitTimeString: 2018-02-13T14:42:25.0000000+00:00
+    changes:
+    - path: Assets\Block.cs
+      fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Block.cs
+      projectPath: Assets\Block.cs
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Assets\Block.cs.meta
+      fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Block.cs.meta
+      projectPath: Assets\Block.cs.meta
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Assets\Chunk.cs
+      fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Chunk.cs
+      projectPath: Assets\Chunk.cs
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Assets\Chunk.cs.meta
+      fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Chunk.cs.meta
+      projectPath: Assets\Chunk.cs.meta
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Assets\cubes.unity
+      fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\cubes.unity
+      projectPath: Assets\cubes.unity
+      originalPath: 
+      status: 3
+      staged: 0
+  - commitID: 81a2ca616730eb4d29e0a9e2a3598d6948a8cfa7
+    mergeA: 
+    mergeB: 
+    authorName: Luke Gardner
+    authorEmail: stylg4@nottingham.ac.uk
+    commitEmail: stylg4@nottingham.ac.uk
+    commitName: Luke Gardner
+    summary: Basic Block Generation
+    description: "Basic Block Generation\r\n\r\nSuper basic v1 block generation with
+      chunking"
+    timeString: 2018-02-13T14:22:50.0000000+00:00
+    commitTimeString: 2018-02-13T14:22:50.0000000+00:00
+    changes:
+    - path: Assets\Block.cs
+      fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Block.cs
+      projectPath: Assets\Block.cs
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Block.cs.meta
+      fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Block.cs.meta
+      projectPath: Assets\Block.cs.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\CameraController.cs
+      fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\CameraController.cs
+      projectPath: Assets\CameraController.cs
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\CameraController.cs.meta
+      fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\CameraController.cs.meta
+      projectPath: Assets\CameraController.cs.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Chunk.cs
+      fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Chunk.cs
+      projectPath: Assets\Chunk.cs
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Chunk.cs.meta
+      fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Chunk.cs.meta
+      projectPath: Assets\Chunk.cs.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Plugins.meta
+      fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\Plugins.meta
+      projectPath: Assets\Plugins.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\blockatlas.jpg
+      fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\blockatlas.jpg
+      projectPath: Assets\blockatlas.jpg
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\blockatlas.jpg.meta
+      fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\blockatlas.jpg.meta
+      projectPath: Assets\blockatlas.jpg.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\cubes.unity
+      fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\cubes.unity
+      projectPath: Assets\cubes.unity
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\cubes.unity.meta
+      fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\cubes.unity.meta
+      projectPath: Assets\cubes.unity.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\minecraft.mat
+      fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\minecraft.mat
+      projectPath: Assets\minecraft.mat
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\minecraft.mat.meta
+      fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\minecraft.mat.meta
+      projectPath: Assets\minecraft.mat.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\splitatlas.jpg
+      fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\splitatlas.jpg
+      projectPath: Assets\splitatlas.jpg
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\splitatlas.jpg.meta
+      fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\splitatlas.jpg.meta
+      projectPath: Assets\splitatlas.jpg.meta
+      originalPath: 
+      status: 4
+      staged: 0
+  - commitID: 8ad632b82ccd24fefecd6a8c449fcf196c7acd42
+    mergeA: 
+    mergeB: 
+    authorName: Luke Gardner
+    authorEmail: stylg4@nottingham.ac.uk
+    commitEmail: stylg4@nottingham.ac.uk
+    commitName: Luke Gardner
+    summary: Initial commit
+    description: Initial commit
+    timeString: 2018-02-13T12:34:46.0000000+00:00
+    commitTimeString: 2018-02-13T12:34:46.0000000+00:00
+    changes:
+    - path: .gitattributes
+      fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\.gitattributes
+      projectPath: .gitattributes
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: .gitignore
+      fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\.gitignore
+      projectPath: .gitignore
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\.gitignore
+      fullPath: D:\Luke Gardner\Documents\MCC\Minecraft Clone\Assets\.gitignore
+      projectPath: Assets\.gitignore
+      originalPath: 
+      status: 4
+      staged: 0
