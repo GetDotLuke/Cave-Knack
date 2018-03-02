@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model Sheep", "Model Sheep.csproj", "{100D46FF-5732-54B5-C201-39EB8C7787EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{100D46FF-5732-54B5-C201-39EB8C7787EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{100D46FF-5732-54B5-C201-39EB8C7787EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{100D46FF-5732-54B5-C201-39EB8C7787EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{100D46FF-5732-54B5-C201-39EB8C7787EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
