@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+--------------------------------------
+
+
+using UnityEngine;
 using System.Collections;
 
 public class MoveSheep : MonoBehaviour
@@ -24,7 +27,7 @@ public class MoveSheep : MonoBehaviour
             selfRigidbody.AddForce(0, forceConst, 0, ForceMode.Impulse);
         }
     }
-    
+
 
     void Update()
     {
@@ -42,3 +45,9 @@ public class MoveSheep : MonoBehaviour
     }
 
 }
+
+tutorial followed:
+
+https://www.youtube.com/watch?v=Oqajv3vL58k&t=1s
+
+
