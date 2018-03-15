@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Block {
 
+    //defines the sides of a block as well as blocktype
 	enum Cubeside {BOTTOM, TOP, LEFT, RIGHT, FRONT, BACK};
 	public enum BlockType {GRASS, DIRT, STONE, BEDROCK, REDSTONE, DIAMOND, AIR};
 
+    //variables we're keeping track of
 	public BlockType bType;
 	public bool isSolid;
 	Chunk owner;
 	GameObject parent;
 	Vector3 position;
 
+    //declares coordinates of UV's found in the split texture atlas
 	Vector2[,] blockUVs = { 
 		/*GRASS TOP*/		{new Vector2( 0.125f, 0.375f ), new Vector2( 0.1875f, 0.375f),
 			new Vector2( 0.125f, 0.4375f ),new Vector2( 0.1875f, 0.4375f )},
@@ -44,9 +47,11 @@ public class Block {
 
 	void CreateQuad(Cubeside side)
 	{
+        //create new mesh
 		Mesh mesh = new Mesh();
 		mesh.name = "ScriptedMesh" + side.ToString(); 
 
+        //define arrays 
 		Vector3[] vertices = new Vector3[4];
 		Vector3[] normals = new Vector3[4];
 		Vector2[] uvs = new Vector2[4];
@@ -58,6 +63,7 @@ public class Block {
 		Vector2 uv01;
 		Vector2 uv11;
 
+        //gives grass block different textures on its top and side and dirt underneath if grass block, otherwise uses blocktype for UV
 		if(bType == BlockType.GRASS && side == Cubeside.TOP)
 		{
 			uv00 = blockUVs[0,0];
@@ -90,6 +96,7 @@ public class Block {
 		Vector3 p6 = new Vector3(  0.5f,   0.5f, -0.5f );
 		Vector3 p7 = new Vector3( -0.5f,   0.5f, -0.5f );
 
+        //constructs quads in order to make aa cube
 		switch(side)
 		{
 		case Cubeside.BOTTOM:
@@ -136,13 +143,16 @@ public class Block {
 			break;
 		}
 
+        //puts values back into the mesh
 		mesh.vertices = vertices;
 		mesh.normals = normals;
 		mesh.uv = uvs;
 		mesh.triangles = triangles;
 
+        //calculates the bounding box of mesh to avoid occlusion when rendering
 		mesh.RecalculateBounds();
 
+        //
 		GameObject quad = new GameObject("Quad");
 		quad.transform.position = position;
 		quad.transform.parent = this.parent.transform;
@@ -200,6 +210,7 @@ public class Block {
 		return false;
 	}
 
+    //draws cube
 	public void Draw()
 	{
 		if(bType == BlockType.AIR) return;
