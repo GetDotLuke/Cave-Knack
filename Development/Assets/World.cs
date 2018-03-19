@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,8 +12,8 @@ public class World : MonoBehaviour {
 	public static int columnHeight = 16;
 	public static int chunkSize = 16;
 	public static int worldSize = 1;
-	public static int radius = 5;
-	public static uint maxCoroutines = 1000;
+	public static int radius = 12;
+	public static uint maxCoroutines = 5000;
 	public static ConcurrentDictionary<string, Chunk> chunks;
 	public static List<string> toRemove = new List<string>();
 	public Slider loadingAmount;
@@ -28,8 +27,10 @@ public class World : MonoBehaviour {
 
 	CoroutineQueue queue;
 
-	public Vector3 lastbuildPos;
+    //record last player position
+    public Vector3 lastbuildPos;
 
+    //takes position of chunk and generates a string from its xyz coordinates
 	public static string BuildChunkName(Vector3 v)
 	{
 		return (int)v.x + "_" + 
@@ -59,9 +60,11 @@ public class World : MonoBehaviour {
 		}
 	}
 
+    //recursive 3d floodfill algorithm for world building
 	IEnumerator BuildRecursiveWorld(int x, int y, int z, int startrad, int rad)
 	{
-		int nextrad = rad-1;
+        //when radius reachs 0 then break
+        int nextrad = rad-1;
 		if(rad <= 0 || y < 0 || y > columnHeight) yield break;
 		//build chunk front
 		BuildChunkAt(x,y,z+1);
@@ -95,6 +98,7 @@ public class World : MonoBehaviour {
 
 	}
 
+    //loops through dictionary and draws chunks if they are set to draw
 	IEnumerator DrawChunks()
 	{
 		toRemove.Clear();
@@ -112,6 +116,7 @@ public class World : MonoBehaviour {
 		}
 	}
 
+    //loops through chunks added to toRemove list, gets chunks keys, uses those to destroy chunks found in the dictionary but saves chunk to a file before doing so
 	IEnumerator RemoveOldChunks()
 	{
 		for(int i = 0; i < toRemove.Count; i++)
@@ -130,6 +135,7 @@ public class World : MonoBehaviour {
 
 	public void BuildNearPlayer()
 	{
+        //stops any current chunk building and then restarts using new player position
 		StopCoroutine("BuildRecursiveWorld");
 		lastBuildTime = Time.time;
 		queue.Run(BuildRecursiveWorld((int)(player.transform.position.x/chunkSize),
@@ -137,7 +143,7 @@ public class World : MonoBehaviour {
 			(int)(player.transform.position.z/chunkSize),radius,radius));
 	}
 
-	// Use this for initialization
+	// Use this for initialisation
 	void Start () {
 		Vector3 ppos = player.transform.position;
 		player.transform.position = new Vector3(ppos.x,
@@ -160,7 +166,8 @@ public class World : MonoBehaviour {
 		BuildChunkAt((int)(player.transform.position.x/chunkSize),
 			(int)(player.transform.position.y/chunkSize),
 			(int)(player.transform.position.z/chunkSize));
-		//draw it
+		
+        //draw it
 		queue.Run(DrawChunks());
 
 		//create a bigger world
@@ -173,6 +180,7 @@ public class World : MonoBehaviour {
 	void Update () {
 		Vector3 movement = lastbuildPos - player.transform.position;
 
+        //detects if player has moved from one chunk to another and sets new player position
 		if(movement.magnitude > chunkSize )
 		{
 			lastbuildPos = player.transform.position;

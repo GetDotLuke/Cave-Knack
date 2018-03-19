@@ -4,24 +4,28 @@ using UnityEngine;
 
 public class Utils {
 
+    //tweak these to modify noise values
 	static int maxHeight = 150;
 	static float smooth = 0.01f;
 	static int octaves = 4;
-	static float persistence = 0.5f;
+	static float persistence = 0.3f;
 
+    //generates height of stone
 	public static int GenerateStoneHeight(float x, float z)
 	{
 		float height = Map(0,maxHeight-5, 0, 1, fBM(x*smooth*2,z*smooth*2,octaves+1,persistence));
 		return (int) height;
 	}
 
+    //generates height of dirt
 	public static int GenerateHeight(float x, float z)
 	{
 		float height = Map(0,maxHeight, 0, 1, fBM(x*smooth,z*smooth,octaves,persistence));
 		return (int) height;
 	}
 
-	public static float fBM3D(float x, float y, float z, float sm, int oct)
+    //3d fractal brownian motion perlin noise generator
+    public static float fBM3D(float x, float y, float z, float sm, int oct)
 	{
 		float XY = fBM(x*sm,y*sm,oct,0.5f);
 		float YZ = fBM(y*sm,z*sm,oct,0.5f);
@@ -39,6 +43,7 @@ public class Utils {
 		return Mathf.Lerp (newmin, newmax, Mathf.InverseLerp (origmin, origmax, value));
 	}
 
+    //2d fractal brownian motion perlin noise generator
 	static float fBM(float x, float z, int oct, float pers)
 	{
 		float total = 0;

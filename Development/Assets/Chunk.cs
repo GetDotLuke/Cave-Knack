@@ -5,6 +5,7 @@ using System;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 
+//converts block data into bitstream for storage in a matrix
 [Serializable]
 class BlockData
 {
@@ -34,6 +35,7 @@ public class Chunk {
 	public ChunkStatus status;
 	BlockData bd;
 
+    //names chunkdata file
 	string BuildChunkFileName(Vector3 v)
 	{
 		return Application.persistentDataPath + "/savedata/Chunk_" + 
@@ -44,8 +46,9 @@ public class Chunk {
 			"_" + World.radius +
 			".dat";
 	}
-
-	bool Load() //read data from file
+    
+    //read data from file
+	bool Load() 
 	{
 		string chunkFile = BuildChunkFileName(chunk.transform.position);
 		if(File.Exists(chunkFile))
@@ -79,21 +82,23 @@ public class Chunk {
 
 	void BuildChunk()
 	{
+        //loads previously generated fbm data rather than generating it again
 		bool dataFromFile = false;
 		dataFromFile = Load();
 
+        //loops around building chunks using nested for loop
 		chunkData = new Block[World.chunkSize,World.chunkSize,World.chunkSize];
 		for(int z = 0; z < World.chunkSize; z++)
 			for(int y = 0; y < World.chunkSize; y++)
 				for(int x = 0; x < World.chunkSize; x++)
 				{
-                    //creates a position or the block based on the XYZ loop
-
+                    //creates a position for the chunk based on the XYZ loop and the perlin height
                     Vector3 pos = new Vector3(x,y,z);
 					int worldX = (int)(x + chunk.transform.position.x);
 					int worldY = (int)(y + chunk.transform.position.y);
 					int worldZ = (int)(z + chunk.transform.position.z);
 
+                    //if saved data exists, use that and skip to the next for loop
 					if(dataFromFile)
 					{
 						chunkData[x,y,z] = new Block(bd.matrix[x, y, z], pos, 
@@ -104,6 +109,7 @@ public class Chunk {
 
 					int surfaceHeight = Utils.GenerateHeight(worldX,worldZ);
 
+                    //spawns BEDROCK
 					if(Utils.fBM3D(worldX, worldY, worldZ, 0.1f, 3) < 0.42f)
 						chunkData[x,y,z] = new Block(Block.BlockType.AIR, pos, 
 							chunk.gameObject, this);
@@ -112,6 +118,7 @@ public class Chunk {
 							chunk.gameObject, this);
 					else if(worldY <= Utils.GenerateStoneHeight(worldX,worldZ))
 					{
+                        //spawns DIAMOND, REDSTONE and STONE
 						if(Utils.fBM3D(worldX, worldY, worldZ, 0.01f, 2) < 0.4f && worldY < 40)
 							chunkData[x,y,z] = new Block(Block.BlockType.DIAMOND, pos, 
 								chunk.gameObject, this);
@@ -122,11 +129,13 @@ public class Chunk {
 							chunkData[x,y,z] = new Block(Block.BlockType.STONE, pos, 
 								chunk.gameObject, this);
 					}
+                    //spawns GRASS
 					else if(worldY == surfaceHeight)
 					{
 						chunkData[x,y,z] = new Block(Block.BlockType.GRASS, pos, 
 							chunk.gameObject, this);
 					}
+                    //spawns DIRT
 					else if(worldY < surfaceHeight)
 						chunkData[x,y,z] = new Block(Block.BlockType.DIRT, pos, 
 							chunk.gameObject, this);
@@ -136,15 +145,26 @@ public class Chunk {
 							chunk.gameObject, this);
 					}
 
+                    //block is ready to be drawn
 					status = ChunkStatus.DRAW;
 
 				}
 
 	}
 
+    //cleans up and redraws when the block calls for a redraw
+    public void Redraw()
+    {
+        GameObject.DestroyImmediate(chunk.GetComponent<MeshFilter>());
+        GameObject.DestroyImmediate(chunk.GetComponent<MeshRenderer>());
+        GameObject.DestroyImmediate(chunk.GetComponent<Collider>());
+        DrawChunk();
+    }
+
 	public void DrawChunk()
 	{
-		for(int z = 0; z < World.chunkSize; z++)
+        //loops around drawing chunks using nested for loop
+        for (int z = 0; z < World.chunkSize; z++)
 			for(int y = 0; y < World.chunkSize; y++)
 				for(int x = 0; x < World.chunkSize; x++)
 				{
