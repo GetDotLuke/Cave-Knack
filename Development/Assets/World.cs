@@ -12,7 +12,7 @@ public class World : MonoBehaviour {
 	public static int columnHeight = 16;
 	public static int chunkSize = 16;
 	public static int worldSize = 1;
-	public static int radius = 12;
+	public static int radius = 6;
 	public static uint maxCoroutines = 5000;
 	public static ConcurrentDictionary<string, Chunk> chunks;
 	public static List<string> toRemove = new List<string>();

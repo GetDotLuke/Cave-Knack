@@ -8,19 +8,19 @@ public class Utils {
 	static int maxHeight = 150;
 	static float smooth = 0.01f;
 	static int octaves = 4;
-	static float persistence = 0.3f;
+	static float persistence = 0.6f;
 
     //generates height of stone
 	public static int GenerateStoneHeight(float x, float z)
 	{
-		float height = Map(0,maxHeight-5, 0, 1, fBM(x*smooth*2,z*smooth*2,octaves+1,persistence));
+		float height = Map(0,maxHeight-5, 0, 1, fBM(x*smooth/2,z*smooth/2,octaves+1,persistence));
 		return (int) height;
 	}
 
     //generates height of dirt
 	public static int GenerateHeight(float x, float z)
 	{
-		float height = Map(0,maxHeight, 0, 1, fBM(x*smooth,z*smooth,octaves,persistence));
+		float height = Map(0,maxHeight, 0, 1, fBM(x*smooth/4,z*smooth/4,octaves,persistence));
 		return (int) height;
 	}
 
