@@ -33,6 +33,7 @@ public class Chunk {
 	public GameObject chunk;
 	public enum ChunkStatus {DRAW,DONE,KEEP};
 	public ChunkStatus status;
+    public ChunkMB mb;
 	BlockData bd;
 
     //names chunkdata file
@@ -177,11 +178,13 @@ public class Chunk {
 	}
 
 	public Chunk(){}
-	// Use this for initialization
+	// Use this for initialization, chunk creates itself and its own game object
 	public Chunk (Vector3 position, Material c) {
 
 		chunk = new GameObject(World.BuildChunkName(position));
 		chunk.transform.position = position;
+        mb = chunk.AddComponent<ChunkMB>();
+        mb.SetOwner(this);
 		cubeMaterial = c;
 		BuildChunk();
 	}
