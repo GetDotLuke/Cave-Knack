@@ -64,7 +64,7 @@ public class Block {
         currentHealth = blockHealthMax[(int)bType];
     }
 
-   //allows us to change a block from one type to another
+    //allows us to change a block from one type to another
     public void SetType(BlockType b)
     {
         bType = b;
@@ -73,9 +73,24 @@ public class Block {
         else
             isSolid = true;
 
-        //resets block health
         health = BlockType.NOCRACK;
         currentHealth = blockHealthMax[(int)bType];
+    }
+
+    //resets block health
+    public void Reset()
+    {
+        health = BlockType.NOCRACK;
+        currentHealth = blockHealthMax[(int)bType];
+        owner.Redraw();
+    }
+
+    //builds player created blocks
+    public bool BuildBlock(BlockType b)
+    {
+        SetType(b);
+        owner.Redraw();
+        return true;
     }
 
     //reduces block health and redraws block as air or with cracks
