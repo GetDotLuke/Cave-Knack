@@ -16,10 +16,6 @@ public class MoveRandomly : MonoBehaviour {
 
 	public Vector3 Target;	// Gives the Model a movement to reach newtarget.
 
-	public float jumpheight = 50000000;	// Variable used to give height to the model.
-
-	public float jumpTime;	// Calculates how often the model should jump.
-
 	// Use this for initialization
 	void Start () {
 
@@ -31,7 +27,6 @@ public class MoveRandomly : MonoBehaviour {
 	void Update () {
 
 		timer += Time.deltaTime;
-		jumpTime += Time.deltaTime;		// Time related variables are updated.
 
 		if(timer <= newtarget)
 		{
@@ -40,30 +35,16 @@ public class MoveRandomly : MonoBehaviour {
 
 		}
 
-		if(jumpTime <= newtarget)
-		{
-			Jump();
-
-			jumpTime = 0;			// forces a jump, resets the timer.
-		}
-		nav.speed = speed;
-
-
-
 	}
 
-	void Jump ()				// Code used to force a jump. 
-	{
-		GetComponent<Rigidbody>().AddForce(0, jumpheight, 0);
-	}
 
 	void newTarget ()				// Code used to change target.
 	{
 		float myX = gameObject.transform.position.x;
 		float myZ = gameObject.transform.position.z;
 
-		float xPos = myX + Random.Range(myX - 100, myX + 100);
-		float zPos = myZ + Random.Range(myZ - 100, myZ + 100);
+		float xPos = myX + Random.Range(myX - 200, myX + 200);
+		float zPos = myZ + Random.Range(myZ - 200, myZ + 200);
 
 		Target = new Vector3(xPos, gameObject.transform.position.y, zPos);
 

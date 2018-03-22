@@ -82,7 +82,6 @@ D:\Luke Gardner\Documents\MCC\Minecraft Clone\obj\Debug\Assembly-CSharp-firstpas
 C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Development\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
 C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Development\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
 C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Development\Temp\bin\Debug\nunit.framework.dll
-C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Development\Temp\bin\Debug\SyntaxTree.VisualStudio.Unity.Bridge.dll
 C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Development\Temp\bin\Debug\UnityEditor.Advertisements.dll
 C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Development\Temp\bin\Debug\UnityEditor.Analytics.dll
 C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Development\Temp\bin\Debug\UnityEditor.dll
@@ -120,7 +119,6 @@ C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Develop
 C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Development\Temp\bin\Debug\Unity.UNetWeaver.dll
 C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Development\Temp\bin\Debug\Unity.Cecil.Mdb.dll
 C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Development\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
-C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Development\Temp\bin\Debug\SyntaxTree.VisualStudio.Unity.Messaging.dll
 C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Development\Temp\bin\Debug\Unity.CecilTools.dll
 C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Development\Temp\bin\Debug\Unity.Cecil.Pdb.dll
 C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Development\Temp\bin\Debug\UnityEngine.xml
@@ -148,3 +146,4 @@ C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Develop
 C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Development\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
 C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Development\obj\Debug\Assembly-CSharp-firstpass.dll
 C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Development\obj\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Development\Temp\bin\Debug\Facebook.Unity.Settings.dll
