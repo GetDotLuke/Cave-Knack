@@ -1,2 +1,8 @@
 
 Development/Library/
+
+Development/Temp/
+
+*.csproj
+
+*.sln
