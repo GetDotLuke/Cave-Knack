@@ -6,3 +6,7 @@ Development/Temp/
 *.csproj
 
 *.sln
+
+Development/\.vs/Development/v15/\.suo
+
+Development/\.vs/

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Block {
 
@@ -9,8 +10,14 @@ public class Block {
 	public enum BlockType {GRASS, DIRT, STONE, BEDROCK, REDSTONE, DIAMOND, NOCRACK,
         CRACK1, CRACK2, CRACK3, CRACK4, AIR};
 
+    ////Initialising variable collected for number of each item collected
+    ////All elements of collected set to zero when initialised
+    //public int[] collected = new int[4];
+    //public GameObject inventoryPanel;
+    //public GameObject[] inventoryIcons;
+
     //variables we're keeping track of
-	public BlockType bType;
+    public BlockType bType;
 	public bool isSolid;
 	Chunk owner;
 	GameObject parent;
@@ -49,7 +56,30 @@ public class Block {
                                  new Vector2(0.1875f,0.0625f), new Vector2(0.25f,0.0625f)}
     }; 
 
-	public Block(BlockType b, Vector3 pos, GameObject p, Chunk o)
+
+
+
+    //public void Collect(BlockType b)
+    //{
+    //    //look through children for existing icon
+    //    foreach (Transform child in inventoryPanel.transform)
+    //    {
+    //        {
+    //            string c = child.Find("Text").GetComponent<Text>().text;
+    //            int tcount = System.Int32.Parse(c) + 1;
+    //            child.Find("Text").GetComponent<Text>().text = "" + tcount;
+    //            return;
+    //        }
+    //    }
+       
+    //    BlockType mbType = b;
+    //    collected[(int)mbType] = collected[(int)mbType] + 1;
+
+
+
+    //}
+
+    public Block(BlockType b, Vector3 pos, GameObject p, Chunk o)
 	{
 		bType = b;
 		owner = o;
@@ -101,6 +131,10 @@ public class Block {
         health++;
         if (currentHealth <= 0)
         {
+            //if(bType == BlockType.STONE)
+            //{
+            //    Collect(bType);
+            //}
             bType = BlockType.AIR;
             isSolid = false;
             health = BlockType.NOCRACK;
