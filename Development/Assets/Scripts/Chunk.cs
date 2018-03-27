@@ -29,23 +29,27 @@ class BlockData
 public class Chunk {
 
 	public Material cubeMaterial;
-	public Block[,,] chunkData;
+    public Material fluidMaterial;
+    public Block[,,] chunkData;
 	public GameObject chunk;
-	public enum ChunkStatus {DRAW,DONE,KEEP};
+    public GameObject fluid;
+    public enum ChunkStatus {DRAW,DONE,KEEP};
 	public ChunkStatus status;
     public ChunkMB mb;
 	BlockData bd;
+    public bool changed = false;
+    bool treesCreated = false;
 
     //names chunkdata file
-	string BuildChunkFileName(Vector3 v)
+    string BuildChunkFileName(Vector3 v)
 	{
 		return Application.persistentDataPath + "/savedata/Chunk_" + 
-			(int)v.x + "_" +
-			(int)v.y + "_" +
-			(int)v.z + 
-			"_" + World.chunkSize +
-			"_" + World.radius +
-			".dat";
+			                    (int)v.x + "_" +
+			                        (int)v.y + "_" +
+			                            (int)v.z + 
+			                            "_" + World.chunkSize +
+			                            "_" + World.radius +
+			                            ".dat";
 	}
     
     //read data from file
@@ -85,7 +89,7 @@ public class Chunk {
 	{
         //loads previously generated fbm data rather than generating it again
 		bool dataFromFile = false;
-		dataFromFile = Load();
+		//dataFromFile = Load();
 
         //loops around building chunks using nested for loop
 		chunkData = new Block[World.chunkSize,World.chunkSize,World.chunkSize];
@@ -103,7 +107,7 @@ public class Chunk {
 					if(dataFromFile)
 					{
 						chunkData[x,y,z] = new Block(bd.matrix[x, y, z], pos, 
-							chunk.gameObject, this);
+							            chunk.gameObject, this);
 						continue;
 					}
 
@@ -111,12 +115,9 @@ public class Chunk {
 					int surfaceHeight = Utils.GenerateHeight(worldX,worldZ);
 
                     //spawns BEDROCK
-					if(Utils.fBM3D(worldX, worldY, worldZ, 0.1f, 3) < 0.42f)
-						chunkData[x,y,z] = new Block(Block.BlockType.AIR, pos, 
-							chunk.gameObject, this);
-					else if(worldY == 0)
+					if(worldY == 0)
 						chunkData[x,y,z] = new Block(Block.BlockType.BEDROCK, pos, 
-							chunk.gameObject, this);
+							            chunk.gameObject, this);
 					else if(worldY <= Utils.GenerateStoneHeight(worldX,worldZ))
 					{
                         //spawns DIAMOND, REDSTONE and STONE
@@ -130,24 +131,38 @@ public class Chunk {
 							chunkData[x,y,z] = new Block(Block.BlockType.STONE, pos, 
 								chunk.gameObject, this);
 					}
-                    //spawns GRASS
+                    //spawns GRASS and WOODBASE
 					else if(worldY == surfaceHeight)
 					{
-						chunkData[x,y,z] = new Block(Block.BlockType.GRASS, pos, 
-							chunk.gameObject, this);
-					}
-                    //spawns DIRT
+                        if (Utils.fBM3D(worldX, worldY, worldZ, 0.4f, 2) < 0.35f)
+                            chunkData[x, y, z] = new Block(Block.BlockType.WOODBASE, pos,
+                                        chunk.gameObject, this);
+                        else
+                            chunkData[x, y, z] = new Block(Block.BlockType.GRASS, pos,
+                                        chunk.gameObject, this);
+                    }
+                    //spawns DIRT and WATER
 					else if(worldY < surfaceHeight)
 						chunkData[x,y,z] = new Block(Block.BlockType.DIRT, pos, 
 							chunk.gameObject, this);
-					else
+                    else if (worldY < 65)
+                        chunkData[x, y, z] = new Block(Block.BlockType.WATER, pos,
+                                        fluid.gameObject, this);
+                    //otherwise, AIR
+                    else
 					{
 						chunkData[x,y,z] = new Block(Block.BlockType.AIR, pos, 
 							chunk.gameObject, this);
 					}
 
+                    //works out caves and ignores water for cave generation
+                    if (chunkData[x, y, z].bType != Block.BlockType.WATER && Utils.fBM3D(worldX, worldY, worldZ, 0.1f, 3) < 0.42f)
+                        chunkData[x, y, z] = new Block(Block.BlockType.AIR, pos,
+                                        chunk.gameObject, this);
+
+
                     //block is ready to be drawn
-					status = ChunkStatus.DRAW;
+                    status = ChunkStatus.DRAW;
 
 				}
 
@@ -159,64 +174,119 @@ public class Chunk {
         GameObject.DestroyImmediate(chunk.GetComponent<MeshFilter>());
         GameObject.DestroyImmediate(chunk.GetComponent<MeshRenderer>());
         GameObject.DestroyImmediate(chunk.GetComponent<Collider>());
+        GameObject.DestroyImmediate(fluid.GetComponent<MeshFilter>());
+        GameObject.DestroyImmediate(fluid.GetComponent<MeshRenderer>());
+        GameObject.DestroyImmediate(fluid.GetComponent<Collider>());
         DrawChunk();
     }
 
 	public void DrawChunk()
 	{
-        //loops around drawing chunks using nested for loop
+        if (!treesCreated)
+        {
+            for (int z = 0; z < World.chunkSize; z++)
+                for (int y = 0; y < World.chunkSize; y++)
+                    for (int x = 0; x < World.chunkSize; x++)
+                    {
+                        BuildTrees(chunkData[x, y, z], x, y, z);
+                    }
+            treesCreated = true;
+        }
+            //loops around drawing chunks using nested for loop
         for (int z = 0; z < World.chunkSize; z++)
 			for(int y = 0; y < World.chunkSize; y++)
 				for(int x = 0; x < World.chunkSize; x++)
 				{
 					chunkData[x,y,z].Draw();
 				}
-		CombineQuads();
-		MeshCollider collider = chunk.gameObject.AddComponent(typeof(MeshCollider)) as MeshCollider;
-		collider.sharedMesh = chunk.transform.GetComponent<MeshFilter>().mesh;
-		status = ChunkStatus.DONE;
+        CombineQuads(chunk.gameObject, cubeMaterial);
+        MeshCollider collider = chunk.gameObject.AddComponent(typeof(MeshCollider)) as MeshCollider;
+        collider.sharedMesh = chunk.transform.GetComponent<MeshFilter>().mesh;
+
+        CombineQuads(fluid.gameObject, fluidMaterial);
+        status = ChunkStatus.DONE;
 	}
 
-	public Chunk(){}
+    void BuildTrees(Block trunk, int x, int y, int z)
+    {
+        if (trunk.bType != Block.BlockType.WOODBASE) return;
+
+        Block t = trunk.GetBlock(x, y + 1, z);
+        if (t != null)
+        {
+            t.SetType(Block.BlockType.WOOD);
+            Block t1 = t.GetBlock(x, y + 2, z);
+            if (t1 != null)
+            {
+                t1.SetType(Block.BlockType.WOOD);
+
+                for (int i = -1; i <= 1; i++)
+                    for (int j = -1; j <= 1; j++)
+                        for (int k = 3; k <= 4; k++)
+                        {
+                            Block t2 = trunk.GetBlock(x + i, y + k, z + j);
+
+                            if (t2 != null)
+                            {
+                                t2.SetType(Block.BlockType.LEAVES);
+                            }
+                            else return;
+                        }
+                Block t3 = t1.GetBlock(x, y + 5, z);
+                if (t3 != null)
+                {
+                    t3.SetType(Block.BlockType.LEAVES);
+                }
+            }
+        }
+    }
+
+    public Chunk(){}
 	// Use this for initialization, chunk creates itself and its own game object
-	public Chunk (Vector3 position, Material c) {
+	public Chunk(Vector3 position, Material c, Material t) {
 
 		chunk = new GameObject(World.BuildChunkName(position));
 		chunk.transform.position = position;
+        fluid = new GameObject(World.BuildChunkName(position) + "_F");
+        fluid.transform.position = position;
+
         mb = chunk.AddComponent<ChunkMB>();
         mb.SetOwner(this);
-		cubeMaterial = c;
-		BuildChunk();
-	}
+        cubeMaterial = c;
+        fluidMaterial = t;
+        BuildChunk();
+    }
 
 
-	public void CombineQuads()
-	{
-		//1. Combine all children meshes
-		MeshFilter[] meshFilters = chunk.GetComponentsInChildren<MeshFilter>();
-		CombineInstance[] combine = new CombineInstance[meshFilters.Length];
-		int i = 0;
-		while (i < meshFilters.Length) {
-			combine[i].mesh = meshFilters[i].sharedMesh;
-			combine[i].transform = meshFilters[i].transform.localToWorldMatrix;
-			i++;
-		}
+    public void CombineQuads(GameObject o, Material m)
+    {
+        //1. Combine all children meshes
+        MeshFilter[] meshFilters = o.GetComponentsInChildren<MeshFilter>();
+        CombineInstance[] combine = new CombineInstance[meshFilters.Length];
+        int i = 0;
+        while (i < meshFilters.Length)
+        {
+            combine[i].mesh = meshFilters[i].sharedMesh;
+            combine[i].transform = meshFilters[i].transform.localToWorldMatrix;
+            i++;
+        }
 
-		//2. Create a new mesh on the parent object
-		MeshFilter mf = (MeshFilter) chunk.gameObject.AddComponent(typeof(MeshFilter));
-		mf.mesh = new Mesh();
+        //2. Create a new mesh on the parent object
+        MeshFilter mf = (MeshFilter)o.gameObject.AddComponent(typeof(MeshFilter));
+        mf.mesh = new Mesh();
 
-		//3. Add combined meshes on children as the parent's mesh
-		mf.mesh.CombineMeshes(combine);
+        //3. Add combined meshes on children as the parent's mesh
+        mf.mesh.CombineMeshes(combine);
 
-		//4. Create a renderer for the parent
-		MeshRenderer renderer = chunk.gameObject.AddComponent(typeof(MeshRenderer)) as MeshRenderer;
-		renderer.material = cubeMaterial;
+        //4. Create a renderer for the parent
+        MeshRenderer renderer = o.gameObject.AddComponent(typeof(MeshRenderer)) as MeshRenderer;
+        renderer.material = m;
 
-		//5. Delete all uncombined children
-		foreach (Transform quad in chunk.transform) {
-			GameObject.Destroy(quad.gameObject);
-		}
+        //5. Delete all uncombined children
+        foreach (Transform quad in o.transform)
+        {
+            GameObject.Destroy(quad.gameObject);
+        }
 
 	}
 

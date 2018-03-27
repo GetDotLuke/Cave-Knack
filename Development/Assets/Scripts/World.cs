@@ -3,24 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Realtime.Messaging.Internal;
+using System;
 
 
 public class World : MonoBehaviour {
 
 	public GameObject player;
 	public Material textureAtlas;
-	public static int columnHeight = 16;
+    public Material fluidTexture;
+    public static int columnHeight = 16;
 	public static int chunkSize = 16;
 	public static int worldSize = 1;
-	public static int radius = 6;
+	public static int radius = 5;
 	public static uint maxCoroutines = 5000;
 	public static ConcurrentDictionary<string, Chunk> chunks;
 	public static List<string> toRemove = new List<string>();
-	public Slider loadingAmount;
-	public Camera cam;
-	public Button playButton;
-	public float lastBuildTime;
-
+	
 	public static bool firstbuild = true;
 
 	float startTime;
@@ -34,8 +32,8 @@ public class World : MonoBehaviour {
 	public static string BuildChunkName(Vector3 v)
 	{
 		return (int)v.x + "_" + 
-			(int)v.y + "_" + 
-			(int)v.z;
+			        (int)v.y + "_" + 
+			        (int)v.z;
 	}
 
 	public static string BuildColumnName(Vector3 v)
@@ -43,21 +41,58 @@ public class World : MonoBehaviour {
 		return (int)v.x + "_" + (int)v.z;
 	}
 
-	void BuildChunkAt(int x, int y, int z)
+    //allows us to interact with blocks in chunks outside of where the player is.
+    public static Block GetWorldBlock(Vector3 pos)
+    {
+        int cx, cy, cz;
+
+        if (pos.x < 0)
+            cx = (int)(Mathf.Round(pos.x - chunkSize) / (float)chunkSize) * chunkSize;
+        else
+            cx = (int)(Mathf.Round(pos.x) / (float)chunkSize) * chunkSize;
+
+        if (pos.y < 0)
+            cy = (int)(Mathf.Round(pos.y - chunkSize) / (float)chunkSize) * chunkSize;
+        else
+            cy = (int)(Mathf.Round(pos.y) / (float)chunkSize) * chunkSize;
+
+
+        if (pos.z < 0)
+            cz = (int)(Mathf.Round(pos.z - chunkSize) / (float)chunkSize) * chunkSize;
+        else
+            cz = (int)(Mathf.Round(pos.z) / (float)chunkSize) * chunkSize;
+
+        int blx = (int)Mathf.Abs((float)Math.Round(pos.x) - cx);
+        int bly = (int)Mathf.Abs((float)Math.Round(pos.y) - cy);
+        int blz = (int)Mathf.Abs((float)Math.Round(pos.z) - cz);
+
+        string cn = BuildChunkName(new Vector3(cx, cy, cz));
+        Chunk c;
+        if (chunks.TryGetValue(cn, out c))
+        {
+
+            return c.chunkData[blx, bly, blz];
+        }
+        else
+            return null;
+    }
+
+    void BuildChunkAt(int x, int y, int z)
 	{
 		Vector3 chunkPosition = new Vector3(x*chunkSize, 
-			y*chunkSize, 
-			z*chunkSize);
+			                                y*chunkSize, 
+			                                z*chunkSize);
 
 		string n = BuildChunkName(chunkPosition);
 		Chunk c;
 
 		if(!chunks.TryGetValue(n, out c))
 		{
-			c = new Chunk(chunkPosition, textureAtlas);
-			c.chunk.transform.parent = this.transform;
-			chunks.TryAdd(c.chunk.name, c);
-		}
+            c = new Chunk(chunkPosition, textureAtlas, fluidTexture);
+            c.chunk.transform.parent = this.transform;
+            c.fluid.transform.parent = this.transform;
+            chunks.TryAdd(c.chunk.name, c);
+        }
 	}
 
     //recursive 3d floodfill algorithm for world building
@@ -137,18 +172,17 @@ public class World : MonoBehaviour {
 	{
         //stops any current chunk building and then restarts using new player position
 		StopCoroutine("BuildRecursiveWorld");
-		lastBuildTime = Time.time;
 		queue.Run(BuildRecursiveWorld((int)(player.transform.position.x/chunkSize),
-			(int)(player.transform.position.y/chunkSize),
-			(int)(player.transform.position.z/chunkSize),radius,radius));
+			                                (int)(player.transform.position.y/chunkSize),
+			                                (int)(player.transform.position.z/chunkSize),radius,radius));
 	}
 
 	// Use this for initialisation
 	void Start () {
 		Vector3 ppos = player.transform.position;
 		player.transform.position = new Vector3(ppos.x,
-			Utils.GenerateHeight(ppos.x,ppos.z) + 1,
-			ppos.z);
+			                                Utils.GenerateHeight(ppos.x,ppos.z) + 1,
+			                                ppos.z);
 		lastbuildPos = player.transform.position;
 		player.SetActive(false);
 
@@ -160,20 +194,19 @@ public class World : MonoBehaviour {
 		queue = new CoroutineQueue(maxCoroutines, StartCoroutine);
 		startTime = Time.time;
 		Debug.Log("Start Build");
-		lastBuildTime = Time.time;
 
 		//build starting chunk
 		BuildChunkAt((int)(player.transform.position.x/chunkSize),
-			(int)(player.transform.position.y/chunkSize),
-			(int)(player.transform.position.z/chunkSize));
+			                                (int)(player.transform.position.y/chunkSize),
+			                                (int)(player.transform.position.z/chunkSize));
 		
         //draw it
 		queue.Run(DrawChunks());
 
 		//create a bigger world
 		queue.Run(BuildRecursiveWorld((int)(player.transform.position.x/chunkSize),
-			(int)(player.transform.position.y/chunkSize),
-			(int)(player.transform.position.z/chunkSize),radius,radius));
+			                                (int)(player.transform.position.y/chunkSize),
+			                                (int)(player.transform.position.z/chunkSize),radius,radius));
 	}
 
 	// Update is called once per frame
