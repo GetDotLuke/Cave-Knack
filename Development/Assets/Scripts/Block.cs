@@ -128,6 +128,10 @@ public class Block {
             {
                 CollectDiamond.IncrementQuantity();
             }
+            else if(bType == BlockType.WOOD) // || bType == BlockType.WOODBASE)
+            {
+                CollectWood.IncrementQuantity();
+            }
             
             bType = BlockType.AIR;
             isSolid = false;
