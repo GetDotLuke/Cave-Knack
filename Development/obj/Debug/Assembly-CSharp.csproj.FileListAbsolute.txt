@@ -148,4 +148,3 @@ C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Develop
 C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Development\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Development\obj\Debug\Assembly-CSharp.dll
 C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Development\obj\Debug\Assembly-CSharp.pdb
-C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Development\Temp\bin\Debug\Facebook.Unity.Settings.dll

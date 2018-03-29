@@ -146,4 +146,3 @@ C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Develop
 C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Development\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
 C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Development\obj\Debug\Assembly-CSharp-firstpass.dll
 C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Development\obj\Debug\Assembly-CSharp-firstpass.pdb
-C:\Users\George\Desktop\University Files\Repositories\CourseworkG54SPMV2\Development\Temp\bin\Debug\Facebook.Unity.Settings.dll
