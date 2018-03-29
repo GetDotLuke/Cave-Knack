@@ -7,13 +7,13 @@ public class Block {
 
     //defines the sides of a block as well as blocktype
 	enum Cubeside {BOTTOM, TOP, LEFT, RIGHT, FRONT, BACK};
-	public enum BlockType {GRASS, DIRT, WATER, STONE, LEAVES, WOOD, WOODBASE, BEDROCK, REDSTONE, DIAMOND, NOCRACK,
+    public enum BlockType {GRASS, DIRT, WATER, STONE, LEAVES, PINELEAVES, WOOD, WOODBASE, PINE, PINEBASE, SAND, SNOW, BEDROCK, REDSTONE, DIAMOND, NOCRACK,
                             CRACK1, CRACK2, CRACK3, CRACK4, AIR};
-
 
     //variables we're keeping track of
     public BlockType bType;
-	public bool isSolid;
+    public BlockType previousbType;
+    public bool isSolid;
 	public Chunk owner;
 	GameObject parent;
 	public Vector3 position;
@@ -21,33 +21,43 @@ public class Block {
     //gives blocks health
     public BlockType health;
     public int currentHealth;
-    int[] blockHealthMax = { 3, 3, 8, 4, 2, 4, 4, -1, 4, 4, 0, 0, 0, 0, 0, 0 };
+    int[] blockHealthMax = { 3, 3, 10, 4, 2, 2, 4, 4, 4, 4, 2, 3, -1, 4, 4, 0, 0, 0, 0, 0, 0 };
 
     //declares coordinates of UV's found in the split texture atlas
     Vector2[,] blockUVs = { 
 		/*GRASS TOP*/		{new Vector2( 0.125f, 0.375f ), new Vector2( 0.1875f, 0.375f),
-			                    new Vector2( 0.125f, 0.4375f ),new Vector2( 0.1875f, 0.4375f )},
+                                new Vector2( 0.125f, 0.4375f ),new Vector2( 0.1875f, 0.4375f )},
 		/*GRASS SIDE*/		{new Vector2( 0.1875f, 0.9375f ), new Vector2( 0.25f, 0.9375f),
-			                    new Vector2( 0.1875f, 1.0f ),new Vector2( 0.25f, 1.0f )},
+                                new Vector2( 0.1875f, 1.0f ),new Vector2( 0.25f, 1.0f )},
 		/*DIRT*/			{new Vector2( 0.125f, 0.9375f ), new Vector2( 0.1875f, 0.9375f),
-			                    new Vector2( 0.125f, 1.0f ),new Vector2( 0.1875f, 1.0f )},
+                                new Vector2( 0.125f, 1.0f ),new Vector2( 0.1875f, 1.0f )},
 		/*WATER*/			{ new Vector2(0.875f,0.125f),  new Vector2(0.9375f,0.125f),
                                  new Vector2(0.875f,0.1875f), new Vector2(0.9375f,0.1875f)},
 		/*STONE*/			{new Vector2( 0, 0.875f ), new Vector2( 0.0625f, 0.875f),
-			                    new Vector2( 0, 0.9375f ),new Vector2( 0.0625f, 0.9375f )},
+                                new Vector2( 0, 0.9375f ),new Vector2( 0.0625f, 0.9375f )},
 		/*LEAVES*/			{ new Vector2(0.0625f,0.375f),  new Vector2(0.125f,0.375f),
                                  new Vector2(0.0625f,0.4375f), new Vector2(0.125f,0.4375f)},
+ 		/*PINELEAVES*/			{ new Vector2(0.125f,0.375f),  new Vector2(0.1875f,0.375f),
+                                 new Vector2(0.125f,0.4375f), new Vector2(0.1875f,0.4375f)},
  		/*WOOD*/			{ new Vector2(0.375f,0.625f),  new Vector2(0.4375f,0.625f),
                                  new Vector2(0.375f,0.6875f), new Vector2(0.4375f,0.6875f)},
  		/*WOODBASE*/		{ new Vector2(0.375f,0.625f),  new Vector2(0.4375f,0.625f),
-                                 new Vector2(0.375f,0.6875f), new Vector2(0.4375f,0.6875f)},	    
+                                 new Vector2(0.375f,0.6875f), new Vector2(0.4375f,0.6875f)},
+ 		/*PINE*/			{ new Vector2(0.4375f,0.625f),  new Vector2(0.5f,0.625f),
+                                 new Vector2(0.4375f,0.6875f), new Vector2(0.5f,0.6875f)},	
+ 		/*PINEBASE*/		{ new Vector2(0.4375f,0.625f),  new Vector2(0.5f,0.625f),
+                                 new Vector2(0.4375f,0.6875f), new Vector2(0.5f,0.6875f)},
+		/*SAND*/			{ new Vector2(0.125f,0.875f),  new Vector2(0.1875f,0.875f),
+                                 new Vector2(0.125f,0.9375f), new Vector2(0.1875f,0.9375f)},
+ 		/*SNOW*/			{ new Vector2(0f,0.6875f),  new Vector2(0.0625f,0.6875f),
+                                 new Vector2(0f,0.75f), new Vector2(0.0625f,0.75f)},
 		/*BEDROCK*/			{new Vector2( 0.3125f, 0.8125f ), new Vector2( 0.375f, 0.8125f),
-			                    new Vector2( 0.3125f, 0.875f ),new Vector2( 0.375f, 0.875f )},
+                                new Vector2( 0.3125f, 0.875f ),new Vector2( 0.375f, 0.875f )},
 		/*REDSTONE*/		{new Vector2( 0.1875f, 0.75f ), new Vector2( 0.25f, 0.75f),
-			                    new Vector2( 0.1875f, 0.8125f ),new Vector2( 0.25f, 0.8125f )},
+                                new Vector2( 0.1875f, 0.8125f ),new Vector2( 0.25f, 0.8125f )},
 		/*DIAMOND*/			{new Vector2( 0.125f, 0.75f ), new Vector2( 0.1875f, 0.75f),
-			                    new Vector2( 0.125f, 0.8125f ),new Vector2( 0.1875f, 0.8125f )},
-        /*NOCRACK*/			{new Vector2( 0.6875f, 0f ), new Vector2( 0.75f, 0f),
+                                new Vector2( 0.125f, 0.8125f ),new Vector2( 0.1875f, 0.8125f )},
+		/*NOCRACK*/			{new Vector2( 0.6875f, 0f ), new Vector2( 0.75f, 0f),
                                 new Vector2( 0.6875f, 0.0625f ),new Vector2( 0.75f, 0.0625f )},
 		/*CRACK1*/			{ new Vector2(0f,0f),  new Vector2(0.0625f,0f),
                                  new Vector2(0f,0.0625f), new Vector2(0.0625f,0.0625f)},
@@ -57,7 +67,7 @@ public class Block {
                                  new Vector2(0.125f,0.0625f), new Vector2(0.1875f,0.0625f)},
  		/*CRACK4*/			{ new Vector2(0.1875f,0f),  new Vector2(0.25f,0f),
                                  new Vector2(0.1875f,0.0625f), new Vector2(0.25f,0.0625f)}
-                        }; 
+                        };
 
 
 
@@ -73,6 +83,7 @@ public class Block {
     //allows us to change a block from one type to another
     public void SetType(BlockType b)
     {
+        previousbType = bType;
         bType = b;
         if (bType == BlockType.AIR || bType == BlockType.WATER)
             isSolid = false;
@@ -101,8 +112,29 @@ public class Block {
     //builds player created blocks
     public bool BuildBlock(BlockType b)
     {
-        SetType(b);
-        owner.Redraw();
+        if (b == BlockType.WATER)
+        {
+            owner.mb.StartCoroutine(owner.mb.Flow(this,
+                                        BlockType.WATER,
+                                        blockHealthMax[(int)BlockType.WATER], 15));
+        }
+        else if (b == BlockType.SAND)
+        {
+            owner.mb.StartCoroutine(owner.mb.Drop(this,
+                                        BlockType.SAND,
+                                        20));
+        }
+        else if (b == BlockType.SNOW)
+        {
+            owner.mb.StartCoroutine(owner.mb.Drop(this,
+                                        BlockType.SNOW,
+                                        20));
+        }
+        else
+        {
+            SetType(b);
+            owner.Redraw();
+        }
         return true;
     }
 
@@ -128,15 +160,12 @@ public class Block {
             {
                 CollectDiamond.IncrementQuantity();
             }
-            else if(bType == BlockType.WOOD) // || bType == BlockType.WOODBASE)
-            {
-                CollectWood.IncrementQuantity();
-            }
             
             bType = BlockType.AIR;
             isSolid = false;
             health = BlockType.NOCRACK;
             owner.Redraw();
+            owner.UpdateChunk();
             return true;
         }
         owner.Redraw();
@@ -270,13 +299,13 @@ public class Block {
 		meshFilter.mesh = mesh;
 
 	}
-    //used with neighbouring chunks
+    //used with calculations between neighbouring chunks
 	int ConvertBlockIndexToLocal(int i)
 	{
-		if(i == -1) 
+		if(i <= -1) 
 			i = World.chunkSize-1; 
-		else if(i == World.chunkSize) 
-			i = 0;
+		else if(i >= World.chunkSize) 
+			i = i - World.chunkSize;
 		return i;
 	}
 
@@ -293,15 +322,23 @@ public class Block {
     {
         Block[,,] chunks;
 
+        //tests if something is over the chunk boundry 
         if (x < 0 || x >= World.chunkSize ||
             y < 0 || y >= World.chunkSize ||
             z < 0 || z >= World.chunkSize)
         {  //block in a neighbouring chunk
 
+            //gets new xyz values based on the block that has left the chunk boundry
+            int newX = x, newY = y, newZ = z;
+            if (x < 0 || x >= World.chunkSize)
+                newX = (x - (int)position.x) * World.chunkSize;
+            if (y < 0 || y >= World.chunkSize)
+                newY = (y - (int)position.y) * World.chunkSize;
+            if (z < 0 || z >= World.chunkSize)
+                newZ = (z - (int)position.z) * World.chunkSize;
+
             Vector3 neighbourChunkPos = this.parent.transform.position +
-                                        new Vector3((x - (int)position.x) * World.chunkSize,
-                                            (y - (int)position.y) * World.chunkSize,
-                                            (z - (int)position.z) * World.chunkSize);
+                                        new Vector3(newX, newY, newZ);
             string nName = World.BuildChunkName(neighbourChunkPos);
 
             x = ConvertBlockIndexToLocal(x);
@@ -330,8 +367,13 @@ public class Block {
             Block b = GetBlock(x, y, z);
             if (b != null)
                 return (b.isSolid || b.bType == bType);
+        
+            if (bType == BlockType.WATER)
+        
+                return true;
         }
-        catch(System.IndexOutOfRangeException){}
+
+        catch (System.IndexOutOfRangeException){}
 
         return false;
     }

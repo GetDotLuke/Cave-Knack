@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -21,12 +22,9 @@ public class World : MonoBehaviour {
 	
 	public static bool firstbuild = true;
 
-	public Text timerText;
 	float startTime;
 
-
-
-	CoroutineQueue queue;
+    public static CoroutineQueue queue;
 
     //record last player position
     public Vector3 lastbuildPos;
@@ -210,8 +208,6 @@ public class World : MonoBehaviour {
 		queue.Run(BuildRecursiveWorld((int)(player.transform.position.x/chunkSize),
 			                                (int)(player.transform.position.y/chunkSize),
 			                                (int)(player.transform.position.z/chunkSize),radius,radius));
-
-		startTime = Time.time;
 	}
 
 	// Update is called once per frame
@@ -235,12 +231,5 @@ public class World : MonoBehaviour {
 		queue.Run(DrawChunks());
 		queue.Run(RemoveOldChunks());
 
-
-		float t = Time.time - startTime;
-
-		string minutes = ((int)t / 60).ToString ();
-		string seconds = (t % 60).ToString ();
-
-		timerText.text = minutes + ":" + seconds;
 	}
 }

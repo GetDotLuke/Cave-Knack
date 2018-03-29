@@ -23,7 +23,21 @@ public class BlockInteraction : MonoBehaviour {
             buildtype = Block.BlockType.DIAMOND;
         if (Input.GetKeyDown("4"))
             buildtype = Block.BlockType.REDSTONE;
-       
+        if (Input.GetKeyDown("5"))
+            buildtype = Block.BlockType.WOOD;
+        if (Input.GetKeyDown("6"))
+            buildtype = Block.BlockType.WOODBASE;
+        if (Input.GetKeyDown("7"))
+            buildtype = Block.BlockType.PINE;
+        if (Input.GetKeyDown("8"))
+            buildtype = Block.BlockType.PINEBASE;
+        if (Input.GetKeyDown("9"))
+            buildtype = Block.BlockType.WATER;
+        if (Input.GetKeyDown("0"))
+            buildtype = Block.BlockType.SAND;
+        if (Input.GetKeyDown("-"))
+            buildtype = Block.BlockType.SNOW;
+
         if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
         {
             RaycastHit hit;
