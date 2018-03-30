@@ -3,8 +3,12 @@ guid: ad28ff3a4d7471949ab10ad0ef65685a
 timeCreated: 1519314156
 licenseType: Free
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - player: {instanceID: 0}
+  - textureAtlas: {fileID: 2100000, guid: 2af094e070ce1284896d30733d4e76e4, type: 2}
+  - fluidTexture: {fileID: 2100000, guid: cc7c09831ca86444eb40e9bfe0ac464b, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
