@@ -165,7 +165,15 @@ public class Block
             }
             else if (bType == BlockType.WOOD || bType == BlockType.WOODBASE || bType == BlockType.PINE || bType == BlockType.PINEBASE)
             {
-                CollectWood.IncrementQuantity();
+                if (CollectAxe.quantity >= 1)
+                {
+                    CollectWood.IncrementQuantity();
+                    CollectWood.IncrementQuantity();
+                }
+                else
+                {
+                    CollectWood.IncrementQuantity();
+                }
             }
 
             bType = BlockType.AIR;

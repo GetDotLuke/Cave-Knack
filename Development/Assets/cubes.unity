@@ -1995,8 +1995,9 @@ GameObject:
   - component: {fileID: 631107770}
   - component: {fileID: 631107772}
   - component: {fileID: 631107771}
+  - component: {fileID: 631107773}
   m_Layer: 5
-  m_Name: Stone
+  m_Name: Axe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2040,7 +2041,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 7c58fb9b8a81efd4ba9a5ed0f116af64, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6468a4976c33f17409ae76fe37f3f31b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2054,6 +2055,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 631107769}
+--- !u!114 &631107773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 631107769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b568bcd007bb31648a04d12b452a5062, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AxeImage: {fileID: 0}
 --- !u!1 &663985402 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
@@ -2285,7 +2298,7 @@ Transform:
   - {fileID: 32475023}
   - {fileID: 364611581}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!138 &718420440
 FixedJoint:
@@ -2467,7 +2480,7 @@ Transform:
   - {fileID: 313469202}
   - {fileID: 1586131633}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!138 &744133932
 FixedJoint:
@@ -3002,7 +3015,7 @@ Transform:
   m_LocalScale: {x: 100, y: 0.2, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!208 &868585693
 NavMeshObstacle:
@@ -3638,7 +3651,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1343763678
 GameObject:
@@ -4348,7 +4361,7 @@ RectTransform:
   - {fileID: 1111671673}
   - {fileID: 1385218472}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4604,7 +4617,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 0
@@ -4756,7 +4769,7 @@ GameObject:
   - component: {fileID: 1753998937}
   - component: {fileID: 1753998936}
   m_Layer: 5
-  m_Name: QuantityStone
+  m_Name: QuantityAxe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4788,7 +4801,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1753998934}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0e8f535a2cbcb64bb64056eafcea072, type: 3}
+  m_Script: {fileID: 11500000, guid: 2117223c720c89047946c55daee0ba9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1753998937
