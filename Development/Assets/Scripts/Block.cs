@@ -3,20 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class Block {
+public class Block
+{
 
     //defines the sides of a block as well as blocktype
-	enum Cubeside {BOTTOM, TOP, LEFT, RIGHT, FRONT, BACK};
-    public enum BlockType {GRASS, DIRT, WATER, STONE, LEAVES, PINELEAVES, WOOD, WOODBASE, PINE, PINEBASE, SAND, SNOW, BEDROCK, REDSTONE, DIAMOND, NOCRACK,
-                            CRACK1, CRACK2, CRACK3, CRACK4, AIR};
+    enum Cubeside { BOTTOM, TOP, LEFT, RIGHT, FRONT, BACK };
+    public enum BlockType
+    {
+        GRASS, DIRT, WATER, STONE, LEAVES, PINELEAVES, WOOD, WOODBASE, PINE, PINEBASE, SAND, SNOW, BEDROCK, REDSTONE, DIAMOND, NOCRACK,
+        CRACK1, CRACK2, CRACK3, CRACK4, AIR
+    };
 
     //variables we're keeping track of
     public BlockType bType;
     public BlockType previousbType;
     public bool isSolid;
-	public Chunk owner;
-	GameObject parent;
-	public Vector3 position;
+    public Chunk owner;
+    GameObject parent;
+    public Vector3 position;
 
     //gives blocks health
     public BlockType health;
@@ -72,11 +76,11 @@ public class Block {
 
 
     public Block(BlockType b, Vector3 pos, GameObject p, Chunk o)
-	{
-		bType = b;
-		owner = o;
-		parent = p;
-		position = pos;
+    {
+        bType = b;
+        owner = o;
+        parent = p;
+        position = pos;
         SetType(bType);
     }
 
@@ -137,7 +141,6 @@ public class Block {
         }
         return true;
     }
-
     //reduces block health and redraws block as air or with cracks
     public bool HitBlock()
     {
@@ -152,20 +155,23 @@ public class Block {
 
         if (currentHealth <= 0)
         {
-            if(bType == BlockType.STONE)
+            if (bType == BlockType.STONE)
             {
                 CollectStone.IncrementQuantity();
             }
-            else if(bType == BlockType.DIAMOND)
+            else if (bType == BlockType.DIAMOND)
             {
                 CollectDiamond.IncrementQuantity();
             }
-            
+            else if (bType == BlockType.WOOD || bType == BlockType.WOODBASE || bType == BlockType.PINE || bType == BlockType.PINEBASE)
+            {
+                CollectWood.IncrementQuantity();
+            }
+
             bType = BlockType.AIR;
             isSolid = false;
             health = BlockType.NOCRACK;
             owner.Redraw();
-            owner.UpdateChunk();
             return true;
         }
         owner.Redraw();
@@ -173,46 +179,46 @@ public class Block {
     }
 
     void CreateQuad(Cubeside side)
-	{
+    {
         //create new mesh
-		Mesh mesh = new Mesh();
-		mesh.name = "ScriptedMesh" + side.ToString(); 
+        Mesh mesh = new Mesh();
+        mesh.name = "ScriptedMesh" + side.ToString();
 
         //define arrays 
-		Vector3[] vertices = new Vector3[4];
-		Vector3[] normals = new Vector3[4];
-		Vector2[] uvs = new Vector2[4];
+        Vector3[] vertices = new Vector3[4];
+        Vector3[] normals = new Vector3[4];
+        Vector2[] uvs = new Vector2[4];
         List<Vector2> suvs = new List<Vector2>();
         int[] triangles = new int[6];
 
-		//all possible UVs
-		Vector2 uv00;
-		Vector2 uv10;
-		Vector2 uv01;
-		Vector2 uv11;
+        //all possible UVs
+        Vector2 uv00;
+        Vector2 uv10;
+        Vector2 uv01;
+        Vector2 uv11;
 
         //gives grass block different textures on its top and side and dirt underneath if grass block, otherwise uses blocktype for UV
-		if(bType == BlockType.GRASS && side == Cubeside.TOP)
-		{
-			uv00 = blockUVs[0,0];
-			uv10 = blockUVs[0,1];
-			uv01 = blockUVs[0,2];
-			uv11 = blockUVs[0,3];
-		}
-		else if(bType == BlockType.GRASS && side == Cubeside.BOTTOM)
-		{
-			uv00 = blockUVs[(int)(BlockType.DIRT+1),0];
-			uv10 = blockUVs[(int)(BlockType.DIRT+1),1];
-			uv01 = blockUVs[(int)(BlockType.DIRT+1),2];
-			uv11 = blockUVs[(int)(BlockType.DIRT+1),3];
-		}
-		else
-		{
-			uv00 = blockUVs[(int)(bType+1),0];
-			uv10 = blockUVs[(int)(bType+1),1];
-			uv01 = blockUVs[(int)(bType+1),2];
-			uv11 = blockUVs[(int)(bType+1),3];
-		}
+        if (bType == BlockType.GRASS && side == Cubeside.TOP)
+        {
+            uv00 = blockUVs[0, 0];
+            uv10 = blockUVs[0, 1];
+            uv01 = blockUVs[0, 2];
+            uv11 = blockUVs[0, 3];
+        }
+        else if (bType == BlockType.GRASS && side == Cubeside.BOTTOM)
+        {
+            uv00 = blockUVs[(int)(BlockType.DIRT + 1), 0];
+            uv10 = blockUVs[(int)(BlockType.DIRT + 1), 1];
+            uv01 = blockUVs[(int)(BlockType.DIRT + 1), 2];
+            uv11 = blockUVs[(int)(BlockType.DIRT + 1), 3];
+        }
+        else
+        {
+            uv00 = blockUVs[(int)(bType + 1), 0];
+            uv10 = blockUVs[(int)(bType + 1), 1];
+            uv01 = blockUVs[(int)(bType + 1), 2];
+            uv11 = blockUVs[(int)(bType + 1), 3];
+        }
 
         //set cracks
         suvs.Add(blockUVs[(int)(health + 1), 3]);
@@ -236,78 +242,78 @@ public class Block {
 
         //constructs quads in order to make a cube
         switch (side)
-		{
-		case Cubeside.BOTTOM:
-			vertices = new Vector3[] {p0, p1, p2, p3};
-			normals = new Vector3[] {Vector3.down, Vector3.down, 
-				Vector3.down, Vector3.down};
-			uvs = new Vector2[] {uv11, uv01, uv00, uv10};
-			triangles = new int[] { 3, 1, 0, 3, 2, 1};
-			break;
-		case Cubeside.TOP:
-			vertices = new Vector3[] {p7, p6, p5, p4};
-			normals = new Vector3[] {Vector3.up, Vector3.up, 
-				Vector3.up, Vector3.up};
-			uvs = new Vector2[] {uv11, uv01, uv00, uv10};
-			triangles = new int[] {3, 1, 0, 3, 2, 1};
-			break;
-		case Cubeside.LEFT:
-			vertices = new Vector3[] {p7, p4, p0, p3};
-			normals = new Vector3[] {Vector3.left, Vector3.left, 
-				Vector3.left, Vector3.left};
-			uvs = new Vector2[] {uv11, uv01, uv00, uv10};
-			triangles = new int[] {3, 1, 0, 3, 2, 1};
-			break;
-		case Cubeside.RIGHT:
-			vertices = new Vector3[] {p5, p6, p2, p1};
-			normals = new Vector3[] {Vector3.right, Vector3.right, 
-				Vector3.right, Vector3.right};
-			uvs = new Vector2[] {uv11, uv01, uv00, uv10};
-			triangles = new int[] {3, 1, 0, 3, 2, 1};
-			break;
-		case Cubeside.FRONT:
-			vertices = new Vector3[] {p4, p5, p1, p0};
-			normals = new Vector3[] {Vector3.forward, Vector3.forward, 
-				Vector3.forward, Vector3.forward};
-			uvs = new Vector2[] {uv11, uv01, uv00, uv10};
-			triangles = new int[] {3, 1, 0, 3, 2, 1};
-			break;
-		case Cubeside.BACK:
-			vertices = new Vector3[] {p6, p7, p3, p2};
-			normals = new Vector3[] {Vector3.back, Vector3.back, 
-				Vector3.back, Vector3.back};
-			uvs = new Vector2[] {uv11, uv01, uv00, uv10};
-			triangles = new int[] {3, 1, 0, 3, 2, 1};
-			break;
-		}
+        {
+            case Cubeside.BOTTOM:
+                vertices = new Vector3[] { p0, p1, p2, p3 };
+                normals = new Vector3[] {Vector3.down, Vector3.down,
+                Vector3.down, Vector3.down};
+                uvs = new Vector2[] { uv11, uv01, uv00, uv10 };
+                triangles = new int[] { 3, 1, 0, 3, 2, 1 };
+                break;
+            case Cubeside.TOP:
+                vertices = new Vector3[] { p7, p6, p5, p4 };
+                normals = new Vector3[] {Vector3.up, Vector3.up,
+                Vector3.up, Vector3.up};
+                uvs = new Vector2[] { uv11, uv01, uv00, uv10 };
+                triangles = new int[] { 3, 1, 0, 3, 2, 1 };
+                break;
+            case Cubeside.LEFT:
+                vertices = new Vector3[] { p7, p4, p0, p3 };
+                normals = new Vector3[] {Vector3.left, Vector3.left,
+                Vector3.left, Vector3.left};
+                uvs = new Vector2[] { uv11, uv01, uv00, uv10 };
+                triangles = new int[] { 3, 1, 0, 3, 2, 1 };
+                break;
+            case Cubeside.RIGHT:
+                vertices = new Vector3[] { p5, p6, p2, p1 };
+                normals = new Vector3[] {Vector3.right, Vector3.right,
+                Vector3.right, Vector3.right};
+                uvs = new Vector2[] { uv11, uv01, uv00, uv10 };
+                triangles = new int[] { 3, 1, 0, 3, 2, 1 };
+                break;
+            case Cubeside.FRONT:
+                vertices = new Vector3[] { p4, p5, p1, p0 };
+                normals = new Vector3[] {Vector3.forward, Vector3.forward,
+                Vector3.forward, Vector3.forward};
+                uvs = new Vector2[] { uv11, uv01, uv00, uv10 };
+                triangles = new int[] { 3, 1, 0, 3, 2, 1 };
+                break;
+            case Cubeside.BACK:
+                vertices = new Vector3[] { p6, p7, p3, p2 };
+                normals = new Vector3[] {Vector3.back, Vector3.back,
+                Vector3.back, Vector3.back};
+                uvs = new Vector2[] { uv11, uv01, uv00, uv10 };
+                triangles = new int[] { 3, 1, 0, 3, 2, 1 };
+                break;
+        }
 
         //puts values back into the mesh
-		mesh.vertices = vertices;
-		mesh.normals = normals;
-		mesh.uv = uvs;
+        mesh.vertices = vertices;
+        mesh.normals = normals;
+        mesh.uv = uvs;
         mesh.SetUVs(1, suvs);
         mesh.triangles = triangles;
 
         //calculates the bounding box of mesh to avoid occlusion when rendering
-		mesh.RecalculateBounds();
+        mesh.RecalculateBounds();
 
         GameObject quad = new GameObject("Quad");
-		quad.transform.position = position;
-		quad.transform.parent = this.parent.transform;
+        quad.transform.position = position;
+        quad.transform.parent = this.parent.transform;
 
-		MeshFilter meshFilter = (MeshFilter) quad.AddComponent(typeof(MeshFilter));
-		meshFilter.mesh = mesh;
+        MeshFilter meshFilter = (MeshFilter)quad.AddComponent(typeof(MeshFilter));
+        meshFilter.mesh = mesh;
 
-	}
+    }
     //used with calculations between neighbouring chunks
-	int ConvertBlockIndexToLocal(int i)
-	{
-		if(i <= -1) 
-			i = World.chunkSize-1; 
-		else if(i >= World.chunkSize) 
-			i = i - World.chunkSize;
-		return i;
-	}
+    int ConvertBlockIndexToLocal(int i)
+    {
+        if (i <= -1)
+            i = World.chunkSize - 1;
+        else if (i >= World.chunkSize)
+            i = i - World.chunkSize;
+        return i;
+    }
 
     public BlockType GetBlockType(int x, int y, int z)
     {
@@ -367,34 +373,34 @@ public class Block {
             Block b = GetBlock(x, y, z);
             if (b != null)
                 return (b.isSolid || b.bType == bType);
-        
+
             if (bType == BlockType.WATER)
-        
+
                 return true;
         }
 
-        catch (System.IndexOutOfRangeException){}
+        catch (System.IndexOutOfRangeException) { }
 
         return false;
     }
 
     //checks if cubes sides are exposed to air and draws exposed sides
     public void Draw()
-	{
-		if(bType == BlockType.AIR) return;
-        
+    {
+        if (bType == BlockType.AIR) return;
+
         //solid or same neighbour
-        if (!HasSolidNeighbour((int)position.x,(int)position.y,(int)position.z + 1))
-			CreateQuad(Cubeside.FRONT);
-		if(!HasSolidNeighbour((int)position.x,(int)position.y,(int)position.z - 1))
-			CreateQuad(Cubeside.BACK);
-		if(!HasSolidNeighbour((int)position.x,(int)position.y + 1,(int)position.z))
-			CreateQuad(Cubeside.TOP);
-		if(!HasSolidNeighbour((int)position.x,(int)position.y - 1,(int)position.z))
-			CreateQuad(Cubeside.BOTTOM);
-		if(!HasSolidNeighbour((int)position.x - 1,(int)position.y,(int)position.z))
-			CreateQuad(Cubeside.LEFT);
-		if(!HasSolidNeighbour((int)position.x + 1,(int)position.y,(int)position.z))
-			CreateQuad(Cubeside.RIGHT);
-	}
+        if (!HasSolidNeighbour((int)position.x, (int)position.y, (int)position.z + 1))
+            CreateQuad(Cubeside.FRONT);
+        if (!HasSolidNeighbour((int)position.x, (int)position.y, (int)position.z - 1))
+            CreateQuad(Cubeside.BACK);
+        if (!HasSolidNeighbour((int)position.x, (int)position.y + 1, (int)position.z))
+            CreateQuad(Cubeside.TOP);
+        if (!HasSolidNeighbour((int)position.x, (int)position.y - 1, (int)position.z))
+            CreateQuad(Cubeside.BOTTOM);
+        if (!HasSolidNeighbour((int)position.x - 1, (int)position.y, (int)position.z))
+            CreateQuad(Cubeside.LEFT);
+        if (!HasSolidNeighbour((int)position.x + 1, (int)position.y, (int)position.z))
+            CreateQuad(Cubeside.RIGHT);
+    }
 }

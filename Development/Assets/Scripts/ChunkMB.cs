@@ -2,27 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChunkMB: MonoBehaviour
+public class ChunkMB : MonoBehaviour
 {
-	Chunk owner;
-	public ChunkMB(){}
-	public void SetOwner(Chunk o)
-	{
-		owner = o;
+    Chunk owner;
+    public ChunkMB() { }
+    public void SetOwner(Chunk o)
+    {
+        owner = o;
         InvokeRepeating("SaveProgress", 10, 1000);
-	}
+    }
 
     //checks if block is air, if it isnt, then it resets its health after x seconds
     public IEnumerator HealBlock(Vector3 bpos)
-	{
-		yield return new WaitForSeconds(3);
-		int x = (int) bpos.x;
-		int y = (int) bpos.y;
-		int z = (int) bpos.z;
+    {
+        yield return new WaitForSeconds(3);
+        int x = (int)bpos.x;
+        int y = (int)bpos.y;
+        int z = (int)bpos.z;
 
-        if(owner.chunkData[x,y,z].bType != Block.BlockType.AIR)
-			owner.chunkData[x,y,z].Reset();
-	}
+        if (owner.chunkData[x, y, z].bType != Block.BlockType.AIR)
+            owner.chunkData[x, y, z].Reset();
+    }
 
     //allows blocktypes such as SAND and SNOW to drop as if acted on by gravity
     public IEnumerator Drop(Block b, Block.BlockType bt, int maxdrop)

@@ -2,18 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlockInteraction : MonoBehaviour {
+public class BlockInteraction : MonoBehaviour
+{
 
-	public GameObject cam;
+    public GameObject cam;
     Block.BlockType buildtype = Block.BlockType.STONE;
 
     // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
 
         if (Input.GetKeyDown("1"))
             buildtype = Block.BlockType.DIRT;
@@ -41,7 +44,7 @@ public class BlockInteraction : MonoBehaviour {
         if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
         {
             RaycastHit hit;
-            
+
             //fires a ray to hitscan block
             if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 10))
             {
@@ -103,17 +106,17 @@ public class BlockInteraction : MonoBehaviour {
                         updates.Add(World.BuildChunkName(new Vector3(thisChunkx, thisChunky, thisChunkz + World.chunkSize)));
 
                     foreach (string cname in updates)
-	   			    {
-	   				    Chunk c;
+                    {
+                        Chunk c;
                         if (World.chunks.TryGetValue(cname, out c))
                         {
                             //cleans up and redraws
                             c.Redraw();
                         }
-			   		}
-			   	}
-		   	}
-   		}
-	}
+                    }
+                }
+            }
+        }
+    }
 }
 

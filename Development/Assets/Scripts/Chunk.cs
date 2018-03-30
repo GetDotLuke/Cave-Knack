@@ -146,7 +146,7 @@ public class Chunk
                                         chunk.gameObject, this);
                         continue;
                     }
-                    
+
                     //finds the surface height from utils
                     int surfaceHeight = Utils.GenerateHeight(worldX, worldZ);
 
@@ -182,7 +182,7 @@ public class Chunk
                                 chunkData[x, y, z] = new Block(Block.BlockType.WOODBASE, pos,
                                         chunk.gameObject, this);
                         }
-                        else if (worldY < 55) 
+                        else if (worldY < 55)
                             chunkData[x, y, z] = new Block(Block.BlockType.SAND, pos,
                                         chunk.gameObject, this);
                         else
@@ -214,8 +214,8 @@ public class Chunk
                                        chunk.gameObject, this);
                     }
 
-                        //block is ready to be drawn
-                        status = ChunkStatus.DRAW;
+                    //block is ready to be drawn
+                    status = ChunkStatus.DRAW;
 
                 }
     }
