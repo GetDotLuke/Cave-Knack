@@ -157,10 +157,27 @@ public class Block
         {
             if (bType == BlockType.STONE)
             {
-                CollectStone.IncrementQuantity();
+                if (CollectPickaxe.quantity >= 1)
+                {
+                    CollectStone.IncrementQuantity();
+                    CollectStone.IncrementQuantity();
+                    if (CollectPickaxe.numberUses < 4)
+                    {
+                        CollectPickaxe.IncrementUses();
+                    }
+                    else
+                    {
+                        CollectPickaxe.quantity--;
+                        CollectPickaxe.ResetUses();
+                    }
+                }
+                else
+                {
+                    CollectStone.IncrementQuantity();
+                }
             }
             else if (bType == BlockType.DIAMOND)
-            {
+            {       
                 CollectDiamond.IncrementQuantity();
             }
             else if (bType == BlockType.WOOD || bType == BlockType.WOODBASE || bType == BlockType.PINE || bType == BlockType.PINEBASE)
@@ -169,6 +186,16 @@ public class Block
                 {
                     CollectWood.IncrementQuantity();
                     CollectWood.IncrementQuantity();
+                    if (CollectAxe.numberUses < 4)
+                    {
+                        CollectAxe.IncrementUses();
+                    }
+                    else
+                    {
+                        CollectAxe.quantity--;
+                        CollectAxe.ResetUses();
+                    }
+
                 }
                 else
                 {
