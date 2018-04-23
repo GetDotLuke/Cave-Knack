@@ -17,13 +17,18 @@ public class sInventory : MonoBehaviour {
 
 
 	void Update() {
+		
 		if (Input.GetKeyDown("i")) {
 			isShowing = !isShowing;
 			Menu.SetActive(isShowing);
+
 			isShowing = !isShowing;
 			Crosshair.SetActive(isShowing);
+
 			TimerText.SetActive (isShowing);
 			isShowing = !isShowing;
+
+
 		}
 	}
 }
